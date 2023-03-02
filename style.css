@@ -29,6 +29,7 @@
 
     /*--------SECTION-3-CATEGORY------- */
     --subPara-clr: #6B6B6B;
+    --pseudo-clr:#666666;
     --cardHeading-clr: #3D3D3D;
     --card-clr1: #EC5512;
     --card-clr2: #FF8C00;
@@ -64,8 +65,12 @@
 
 
     /*--------SECTION-6-BLOG-------- */
+    --blogCard-crl:#F8F8F8;
     --blogPrimary-clr: #747474;
     --blogSecondary-clr: #2C2C2C;
+    --blogfontSize1:0.625rem;
+    --blogfontSize2:1.125rem;
+    --blogfontSize3:0.75rem;
     /*--------/SECTION-6-BLOG------- */
 
 
@@ -87,7 +92,7 @@ body{
 /* ==================GENERAL CSS======================== */
 h1,h2,h3,h4{
     font-weight: 600;
-    letter-spacing: 0.035em;
+    letter-spacing: 0.035rem;
 }
 
 h1{
@@ -111,7 +116,7 @@ h3{
 h4{
     color: var(--icon-clr);
     font-size: 1.5rem;
-    line-height: 1.813em;
+    line-height: 1.813rem;
     font-weight: 600;
 }
 
@@ -156,6 +161,9 @@ i{
 }
 
 .cta-btn2{
+    display: inline-block;
+    width: 11.688rem;
+    height: 3.5rem;
     background-color: transparent;
     color: var(--black-clr);
     border: 1px solid var(--black-clr);
@@ -163,7 +171,7 @@ i{
     cursor: pointer;
 }
 
-.cta-btn2{
+.cta-btn2:hover{
     background-color: var(--black-clr);
     color: var(--white-clr);
 }
@@ -180,7 +188,6 @@ i{
 .grid{
     display: grid;
 }
-
 /* ===================ARROW-SLIDER-COMPONENT================== */
 .right-arrow{
     position: relative;
@@ -196,12 +203,13 @@ i{
    }
    .line::after{
     content: "";
+    left: 0;
     width:100%;
     background-color: black;
     display: inline-block;
     height: 2px;
     position: absolute;
-   transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
    transform: translateX(0);
    }
    .arrow-animator:hover .line::after{
@@ -251,5 +259,192 @@ i{
 .section2 .categories .top-content a{
     margin: 3rem 0rem 6.25rem 0rem;
 }
+.section2 .bottom-content{
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+    text-align: center;
+}
+.heading h2{
+    position: relative;
+}
+.heading h2::before{
+    content: "";
+    width:25% ;
+    top: 50%;
+    right: 0;
+    height: 2px;
+    background-color:var(--pseudo-clr) ;
+    display: inline-block;
+    position: absolute;
+}
+.heading h2::after{
+    content: "";
+    width:25% ;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    background-color:var(--pseudo-clr) ;
+    display: inline-block;
+    position: absolute;
+}
 
+/* ------------ GRID CARD CSS---- */
+.section2 .cards{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.section2 .card{
+    width: 25rem;
+    min-height: 28.813rem;
+    box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section2 .card img{
+    height: 284px;
+    width: 284px;
+    transition: .3s ease-out;
+}
+.section2 .card:hover  img{
+    transform: scale(1.1);
+}
+.section2 .card:hover .line::after{
+    transform: translateX(-100%);
+   }
+.section2 .card .arrow-animator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+.section2 .card h3{
+    color: var(--cardHeading-clr);
+}
+.section2 #card1{
+    background-color:var(--card-clr1) ;
+}
+.section2 #card2{
+    background-color:var(--card-clr2) ;
+}
+.section2 #card3{
+    background-color:var(--card-clr3) ;
+}
+.section2 #card4{
+    background-color:var(--card-clr4) ;
+}
+.section2 #card5{
+    background-color:var(--card-clr5) ;
+}
+.section2 #card6{
+    background-color:var(--card-clr6) ;
+}
+.section2 .shopAll{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    margin-top: -3rem;
+}
+.section2 .shopAll span{
+    color: var(--shopAll-clr);
+}
+/* ------------ GRIDCARD CSS ----*/
 /*---------------- SECTION-2 ABOUT CSS ENDS---------------------- */
+
+
+/*---------------- SECTION-5  BLOG STARTS---------------------- */
+.section5 .blog{
+    gap: 6.25rem;
+}
+.section5 .heading{
+    text-align: center;
+}
+.section5 .blogCards{
+    gap: 2rem;
+}
+.section5 .card{
+    min-height: 489px;
+    width: 400px;
+    background-color:var(--blogCard-crl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section5 .column1{
+    overflow: hidden;
+    border-radius: 9px;
+}
+.section5 .card
+ .column2, .column3, .column4{
+    padding: 0rem 2rem;
+}
+.section5 .card .column2{
+    justify-content: space-between;
+    display: flex;
+}
+.section5 .card .column5{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.section5 .column2 span{
+    font-size: var(--blogfontSize1);
+    color: var(--blogPrimary-clr);
+}
+.section5 .column3 h4{
+    font-size: var(--blogfontSize2);
+}
+.section5 .column4 p{
+font-size: var(--blogfontSize3);
+}
+.section5 .column5 >span{
+    font-size: var(--blogfontSize3);
+    color: var(--blogPrimary-clr);
+    padding-bottom: 1.5rem;
+}
+.section5 .card img{
+    transform: scale(1);
+    transition: .3s ease-out;
+}
+.section5 .card:hover img{
+    transform: scale(1.1);
+}
+.section5 .card:hover .line::after{
+    transform: translateX(-100%);
+   }
+
+   .section5 .searchSection{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 0;
+   }
+   .section5 .searchSection input{
+    width: 650px;
+    padding:1rem 2rem;
+    color: var(--inputText-clr);
+    border: 1px solid --inputBorder-clr;
+   }
+   .section5 .inputBar{
+    position: relative;
+   }
+   .searchSection .inputBar:after{
+    content: url(/assets/HomePageImages/HreoSection/searchIcon.svg);
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top:30%;
+   }
+/*---------------- //SECTION-5  BLOG ENDS---------------------- */
+
+
