@@ -14,20 +14,21 @@
     --white-clr: #FFFFFF;
     --black-clr: #000000;
 
-    /*--------SECTION-1-MAIN-------- */
+    /*--------SECTION--Hero-------- */
+    --hero-clr:#FFC806;
     --linkFont-clr: #424242;
     --mainHeading-clr: #1F1D1D;
     --mainPara-clr: #3A3A3A;
-    /*--------/SECTION-1-MAIN-------- */
+    /*--------/SECTION-Hero-------- */
 
 
-    /*--------SECTION-2-ABOUT-------- */
+    /*--------SECTION-1-ABOUT-------- */
     --icon-clr: #282828;;
     --iconPara-clr: #636363;
-    /*--------SECTION-2-ABOUT------- */
+    /*--------SECTION-1-ABOUT------- */
 
 
-    /*--------SECTION-3-CATEGORY------- */
+    /*--------SECTION-2-CATEGORY------- */
     --subPara-clr: #6B6B6B;
     --pseudo-clr:#666666;
     --cardHeading-clr: #3D3D3D;
@@ -38,16 +39,16 @@
     --card-clr5: #C4EADD;
     --card-clr6: #F8F8F8;
     --shopAll-clr: #2D2D2D;
-    /*--------/SECTION-3-CATEGORY------- */
+    /*--------/SECTION-2-CATEGORY------- */
 
 
-    /*--------SECTION-4-BEST-SELLERS------- */
+    /*--------SECTION-3-BEST-SELLERS------- */
     --newSpan-clr: #232323;
     --discoundPrice-clr: #BD2828;
-    /*--------/SECTION-4-BEST-SELLERS------- */
+    /*--------/SECTION-3-BEST-SELLERS------- */
 
 
-    /*--------SECTION-5-REVIEWS------- */
+    /*--------SECTION-4-REVIEWS------- */
     --reviewPrimary-clr: #474747;
     --bar-clr: #B4B4B4;
     --mainProgressBar-clr:#414141;
@@ -61,17 +62,17 @@
     --reviewText-clr1: #919191;
     --reviewText-clr2: #909090;
     --weeksText: #636363;
-    /*--------/SECTION-5-REVIEWS------- */
+    /*--------/SECTION-4-REVIEWS------- */
 
 
-    /*--------SECTION-6-BLOG-------- */
+    /*--------SECTION-5-BLOG-------- */
     --blogCard-crl:#F8F8F8;
     --blogPrimary-clr: #747474;
     --blogSecondary-clr: #2C2C2C;
     --blogfontSize1:0.625rem;
     --blogfontSize2:1.125rem;
     --blogfontSize3:0.75rem;
-    /*--------/SECTION-6-BLOG------- */
+    /*--------/SECTION-5-BLOG------- */
 
 
     /*--------INPUT-COLOR------- */
@@ -97,8 +98,9 @@ h1,h2,h3,h4{
 
 h1{
     color: var(--mainHeading-clr);
-    font-size: 4rem;
-    line-height: 4.875em;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 4.875rem;
 }
 
 h2{
@@ -153,6 +155,7 @@ i{
     border: 1px solid var(--black-clr);
     transition: all 0.3s ease-out;
     cursor: pointer;
+    font-size: 1.125rem;
 }
 
 .cta-btn1:hover{
@@ -169,6 +172,7 @@ i{
     border: 1px solid var(--black-clr);
     transition: all 0.3s ease-out;
     cursor: pointer;
+    font-size: 1.125rem;
 }
 
 .cta-btn2:hover{
@@ -198,16 +202,16 @@ i{
     display: inline-block;
     top: 8px;
     width: 30px;
-    height: 2px;
+    height: 1px;
     background-color: black;
    }
    .line::after{
     content: "";
     left: 0;
-    width:100%;
+    width:50%;
     background-color: black;
     display: inline-block;
-    height: 2px;
+    height: 100%;
     position: absolute;
     transition: all 0.4s ease-out;
    transform: translateX(0);
@@ -219,6 +223,70 @@ i{
 
 
 /* ==================//GENERAL CSS======================== */
+
+/* ==================HERO-SECTION CSS======================== */
+.hero-section{
+    width: 100%;
+   background-color: var(--hero-clr);
+}
+
+.hero-section .flex-column{
+   gap: 6.25rem;
+}
+
+.hero-section .header-container .flex-row:first-child{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hero-section .header-container{
+  margin-top: 2.5rem;
+}
+
+.hero-section .nav-container ul{
+   display: flex;
+   gap: 2.5rem;
+}
+
+.hero-section .nav-container li a{
+   color: var(--linkFont-clr);
+   transition: all 0.3s ease-out;
+   font-weight: 600;
+}
+
+.hero-section .nav-container li a:hover{
+   color: var(--black-clr);
+}
+
+.hero-section .icon-container{
+   display: flex;
+   gap: 1.5rem;
+}
+.hero-section .icon-container a:nth-of-type(2){
+   width: 28px;
+   height: 28px;
+}
+
+.hero-section .column .flex-row{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hero-section .content-container p{
+   margin-top: 2rem;
+   color: var(--mainPara-clr);
+}
+
+.hero-section .btn-container{
+   margin-top: 6.25rem;
+   display: flex;
+   gap: 2rem;
+}
+
+.hero-section .column{
+   margin-bottom: 7rem;
+}
+/* ==================//HERO-SECTION CSS======================== */
 
 /*---------------- SECTION-1 ABOUT CSS STARTS---------------------- */
 .section1{
@@ -446,5 +514,115 @@ font-size: var(--blogfontSize3);
     top:30%;
    }
 /*---------------- //SECTION-5  BLOG ENDS---------------------- */
+
+
+/* -------------FOOTER-SECTION----------------- */
+.footer-container{
+    width: 100%;
+    background-color: var(--black-clr);
+    padding: 3rem 0;
+ }
+ 
+ .footer-container .flex-column{
+    gap: 4rem;
+ }
+ 
+ .footer-container .flex-row{
+    justify-content: space-between;
+ }
+ 
+ .footer-container .heading-container h4{
+    color: var(--white-clr);
+ }
+ 
+ .footer-container .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+ }
+ 
+ 
+ .footer-container .footer-links a{
+    color: var(--white-clr);
+ }
+ 
+ .footer-container .footer-content p{
+    color: var(--white-clr);
+    line-height: 1.5rem;
+ }
+ 
+ .footer-container .footer-content p a{
+    color: var(--white-clr);
+    text-decoration: underline;
+ }
+ 
+ .footer-container .flex-row .inner-column{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+ }
+ 
+ .footer-container .search-container input{
+    width: 201px;
+    height: 34px;
+    background-color: transparent;
+    padding-left: 10px;
+    outline: none;
+    color: var(--inputText-clr);
+    border: 1px solid var(--inputBorder-clr);
+ }
+ 
+ .footer-container .search-container button{
+    width: 86px;
+    height: 34px;
+    background-color: var(--white-clr);
+    color: var(--black-clr);
+    transition: all 0.3s ease-out;
+ }
+ 
+ .footer-container .search-container button:hover{
+    background-color: transparent;
+    color: var(--white-clr);
+    border: 1px solid var(--inputBorder-clr);
+ }
+
+ .footer-container .footericons-container{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+ }
+ 
+ .footer-container .footericons-container img{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-clr);
+    border-radius: 50%;
+    padding: 0.5rem;
+ }
+ 
+ .footer-container .column:nth-of-type(2) .flex-row{
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .footer-container .left-content p{
+    color: var(--white-clr);
+ }
+ 
+ .footer-container .payment-container{
+    display: flex;
+    gap: 0.5rem;
+ }
+ 
+ .footer-container .payment-container img{
+    width: 63px;
+    height: 31px;
+    background-color: var(--white-clr);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+ }
+ 
+ /* -------------//FOOTER-SECTION----------------- */
+ 
 
 
