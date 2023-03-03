@@ -234,35 +234,35 @@ i{
    gap: 6.25rem;
 }
 
-.hero-section .header-container .flex-row:first-child{
+.header-container .flex-row:first-child{
    justify-content: space-between;
    align-items: center;
 }
 
-.hero-section .header-container{
+.header-container{
   margin-top: 2.5rem;
 }
 
-.hero-section .nav-container ul{
+.nav-container ul{
    display: flex;
    gap: 2.5rem;
 }
 
-.hero-section .nav-container li a{
+.nav-container li a{
    color: var(--linkFont-clr);
    transition: all 0.3s ease-out;
    font-weight: 600;
 }
 
-.hero-section .nav-container li a:hover{
+.nav-container li a:hover{
    color: var(--black-clr);
 }
 
-.hero-section .icon-container{
+.icon-container{
    display: flex;
    gap: 1.5rem;
 }
-.hero-section .icon-container a:nth-of-type(2){
+.icon-container a:nth-of-type(2){
    width: 28px;
    height: 28px;
 }
