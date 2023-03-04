@@ -1,0 +1,118 @@
+
+/* ----CATEGORIES---- */
+.background-bg {
+    background: var(--card-clr6);
+}
+
+.page-navigation {
+    margin: 5rem 0 3rem 0;
+}
+
+.categories .main {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.product-container .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.page-navigation span i {
+    margin: 0 1rem;
+}
+
+.page-navigation p a{
+    color: var(--black-clr);
+}
+
+.shortby-button {
+    align-items: center;
+    gap: 1rem;
+    margin: 2.4rem 0;
+    position: relative;
+}
+
+.shortby-button select {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+    width: 10rem;
+    padding: 0 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    display: inline-block;
+}
+
+.shortby-button::after{
+    content: "\f107";
+    position: absolute;
+    top: 34.5%;
+    left: 23.5%;
+    font-family: FontAwesome;
+    color: black
+
+}
+
+.shortby-button select:focus{
+    outline: none;
+}
+.shortby-button option{
+   padding: 0 2rem;
+  
+}
+
+.categories-nev-bar ul>li:first-child {
+    margin-bottom: 3rem;
+}
+
+.categories-nev-bar li {
+    margin-bottom: 1rem;
+}
+
+.categories-nev-bar a {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.item-container {
+    padding: 0.4rem 0 0 0;
+}
+
+.page-navigation-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.recent-viewed {
+    background: var(--icon-clr);
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.recent-viewed .heading h1 {
+    color: var(--blogCard-crl);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ----//CATEGORIES---- */
+
+/* -----------SECTION-NEWS-------- */
+.news .heading h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* ---------//SECTION-NEWS-------- */
