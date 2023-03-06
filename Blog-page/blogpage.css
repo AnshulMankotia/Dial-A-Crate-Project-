@@ -32,6 +32,10 @@
 .article-container .article .image img{
 height: 100%;
 width: 100%;
+transition: all 0.3s ease;
+}
+.article-container .article:hover .image img{
+    transform: scale(1.03);
 }
 .article-container .article .discription p{
     padding: 0 0.5rem;
