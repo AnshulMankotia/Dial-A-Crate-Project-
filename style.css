@@ -784,12 +784,11 @@ small {
 }
 
 .view-more {
-    margin-top: 5rem;
+    margin: 5rem 0rem 10rem 0;
     width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 
 .view-more .cta-btn1 {
@@ -883,7 +882,7 @@ small {
     gap: 4rem;
     text-align: center;
     align-items: center;
-    padding: 4rem 0;
+    margin: 5rem 0 10rem 0;
 }
 
 .section5 .searchSection input {

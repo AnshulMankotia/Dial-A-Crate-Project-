@@ -51,16 +51,13 @@
     gap: 1rem;
 }
 
-.news-section .page-navigation a , i{
+.news-section .page-navigation a , i, span{
     color: var(--newsSubText-clr);
     line-height: 1.317rem;
     letter-spacing: 3.5%;
     font-weight: 500;
 }
 
-.news-section .page-navigation .pageNavi{
-    font-size: 1rem !important;
-}
 
 .news-section .page-navigation p i{
     margin:  0 0.5rem;
