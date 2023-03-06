@@ -18,11 +18,17 @@
     line-height: var(--newsHeading-Size);
 }
 
-.news-section p , li{
+.news-section p{
     color: var(--newsText-clr);
     font-size: var(--newaText-size);
     line-height: var(--newsText-LineHight);
 }
+.news-section  li{
+    color: var(--newsText-clr);
+    font-size: var(--newaText-size);
+    line-height: var(--newsText-LineHight);
+}
+
 
 .news-section{
     margin:  5rem 0 6rem 0;
@@ -74,11 +80,14 @@
     display: flex;
     gap: 1.5rem;
 }
+.news-section .social-container img{
+    transform: scale(1);
+      transition: all 0.3s ease-out;
+      cursor: pointer;
+}
 
 .news-section .social-container img:hover{
-    transform: scale(1.3);
-    transition: all 0.3s ease-out;
-    
+    transform: scale(1.4);
 }
 
 .news-section .social-container img:first-child{
