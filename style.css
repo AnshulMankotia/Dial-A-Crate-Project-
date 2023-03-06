@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 *,
 *::after,
@@ -10,88 +9,78 @@
 }
 
 :root {
-    --primary-clr: #FF8C00;
-    --secondary-clr: #D21E1E;
-    --subHeading-clr: #1A1A1A;
-    --white-clr: #FFFFFF;
+    --primary-clr: #ff8c00;
+    --secondary-clr: #d21e1e;
+    --subHeading-clr: #1a1a1a;
+    --white-clr: #ffffff;
     --black-clr: #000000;
 
     /*--------SECTION--Hero-------- */
-    --hero-clr: #FFC806;
+    --hero-clr: #ffc806;
     --linkFont-clr: #424242;
-    --mainHeading-clr: #1F1D1D;
-    --mainPara-clr: #3A3A3A;
+    --mainHeading-clr: #1f1d1d;
+    --mainPara-clr: #3a3a3a;
     /*--------/SECTION-Hero-------- */
-
 
     /*--------SECTION-1-ABOUT-------- */
     --icon-clr: #282828;
-    ;
     --iconPara-clr: #636363;
     /*--------SECTION-1-ABOUT------- */
 
-
     /*--------SECTION-2-CATEGORY------- */
-    --subPara-clr: #6B6B6B;
+    --subPara-clr: #6b6b6b;
     --pseudo-clr: #666666;
-    --cardHeading-clr: #3D3D3D;
-    --card-clr1: #EC5512;
-    --card-clr2: #FF8C00;
-    --card-clr3: #F1E9BA;
-    --card-clr4: #E7E0D0;
-    --card-clr5: #C4EADD;
-    --card-clr6: #F8F8F8;
-    --shopAll-clr: #2D2D2D;
+    --cardHeading-clr: #3d3d3d;
+    --card-clr1: #ec5512;
+    --card-clr2: #ff8c00;
+    --card-clr3: #f1e9ba;
+    --card-clr4: #e7e0d0;
+    --card-clr5: #c4eadd;
+    --card-clr6: #f8f8f8;
+    --shopAll-clr: #2d2d2d;
     /*--------/SECTION-2-CATEGORY------- */
-
 
     /*--------SECTION-3-BEST-SELLERS------- */
     --newSpan-clr: #232323;
-    --discoundPrice-clr: #BD2828;
+    --discoundPrice-clr: #bd2828;
     /*--------/SECTION-3-BEST-SELLERS------- */
-
 
     /*--------SECTION-4-REVIEWS------- */
     --reviewPrimary-clr: #474747;
-    --bar-clr: #B4B4B4;
+    --bar-clr: #b4b4b4;
     --mainProgressBar-clr: #414141;
-    --subProgressBar-clr: #DCDCDC;
+    --subProgressBar-clr: #dcdcdc;
     --Text1-clr: #090909;
     --Text2-clr: #303030;
-    --reviewsCard-clr1: #2F2F2F;
+    --reviewsCard-clr1: #2f2f2f;
     --reviewsCard-clr2: #747474;
-    --reviewsCard-clr3: #4F4F4F;
-    --likeIcon-clr: #706F6F;
+    --reviewsCard-clr3: #4f4f4f;
+    --likeIcon-clr: #706f6f;
     --reviewText-clr1: #919191;
     --reviewText-clr2: #909090;
     --weeksText: #636363;
     /*--------/SECTION-4-REVIEWS------- */
 
-
     /*--------SECTION-5-BLOG-------- */
-    --blogCard-crl: #F8F8F8;
+    --blogCard-crl: #f8f8f8;
     --blogPrimary-clr: #747474;
-    --blogSecondary-clr: #2C2C2C;
+    --blogSecondary-clr: #2c2c2c;
     --blogfontSize1: 0.625rem;
     --blogfontSize2: 1.125rem;
     --blogfontSize3: 0.75rem;
     /*--------/SECTION-5-BLOG------- */
 
-
     /*--------INPUT-COLOR------- */
     --inputText-clr: #969696;
     --inputBorder-clr: #414141;
     /*--------/INPUT-COLOR------- */
-
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     background-color: var(--white-clr);
     min-height: 100vh;
 }
-
-
 
 /* ==================GENERAL CSS======================== */
 h1,
@@ -249,7 +238,6 @@ i {
 }
 
 /* ===================/ARROW-SLIDER-COMPONENT================= */
-
 
 /* ==================//GENERAL CSS======================== */
 
@@ -421,7 +409,7 @@ i {
 .section2 .card img {
     height: 284px;
     width: 284px;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .section2 .card:hover img {
@@ -482,7 +470,6 @@ i {
 /* ------------ GRIDCARD CSS ----*/
 /*---------------- SECTION-2 ABOUT CSS ENDS---------------------- */
 
-
 /*---------------- SECTION-3 BESTSELLER---------------------- */
 .bestseller-container {
     display: flex;
@@ -508,7 +495,7 @@ i {
     padding: 3rem 1rem;
     width: 18.438rem;
     height: 28.813rem;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0.825rem;
     cursor: pointer;
@@ -548,8 +535,8 @@ h5 {
 }
 
 .bestseller-item .reviews img {
-    Width: 0.892rem;
-    Height: 0.852rem;
+    width: 0.892rem;
+    height: 0.852rem;
 }
 
 small {
@@ -560,7 +547,6 @@ small {
     position: absolute;
     top: 5%;
     right: 8%;
-
 }
 
 .red {
@@ -583,7 +569,6 @@ small {
 
 /* ==================//SECTION3-BESTSELLER======================== */
 
-
 /* ==================SECTION4-BUYERS -REVIEWS======================== */
 .review-main {
     margin: 6rem 0rem;
@@ -597,8 +582,8 @@ small {
 }
 
 .reviews .reviews-container .left-heading img {
-    Width: 0.892rem;
-    Height: 0.852rem;
+    width: 0.892rem;
+    height: 0.852rem;
 }
 
 .reviews .reviews-container h5 {
@@ -634,8 +619,8 @@ small {
 }
 
 .review-bars .bar {
-    Width: 38.5625rem;
-    Height: 0.625rem;
+    width: 38.5625rem;
+    height: 0.625rem;
     background-color: var(--bar-clr);
     border-radius: 10px;
 }
@@ -690,7 +675,8 @@ small {
     align-items: center;
     gap: 1rem;
 }
- .horizontal-line {
+
+.horizontal-line {
     margin: 2rem 0;
 }
 
@@ -762,7 +748,6 @@ small {
 .feedback .star-container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .feedback .star-container img {
@@ -866,7 +851,7 @@ small {
 
 .section5 .card img {
     transform: scale(1);
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .section5 .card:hover img {
@@ -907,7 +892,6 @@ small {
 
 /*---------------- //SECTION-5  BLOG ENDS---------------------- */
 
-
 /* -------------FOOTER-SECTION----------------- */
 .footer-container {
     width: 100%;
@@ -932,7 +916,6 @@ small {
     flex-direction: column;
     gap: 0.8rem;
 }
-
 
 .footer-container .footer-links a {
     color: var(--white-clr);
@@ -1015,3 +998,103 @@ small {
 }
 
 /* -------------//FOOTER-SECTION----------------- */
+#age-verify {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#000, 0.6);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+#age-verify .window {
+    padding: 3.4rem 4rem;
+    display: flex;
+    width: 34.25rem;
+    height: 28.875rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(50%);
+    }
+}
+
+#age-verify .window .margin {
+    margin-top: 1.6rem;
+    font-size: .975rem;
+}
+
+#age-verify .window.active {
+    animation: 0.4s ease-out 0s 1 move;
+    opacity: 1;
+}
+
+#age-verify .window .logo img {
+    height: 4.875rem;
+    width: 19.375rem;
+    margin: 0 auto;
+}
+
+#age-verify .window .title {
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+}
+
+#age-verify .window .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+#age-verify .window .btn-container .cta-btn2 {
+    width: 6rem;
+    height: 3rem;
+}
+
+.underBox {
+    padding: 3.4rem 5rem;
+    position: absolute;
+    width: 34.25rem;
+    height: 28.875rem;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+#age-verify.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#age-verify.hidden .window {
+    transform: scale(0.5);
+}
+
+#age-verify.under .window .underbox {
+    top: 0%
+}
