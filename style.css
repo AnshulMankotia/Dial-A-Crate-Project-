@@ -119,7 +119,7 @@ h4 {
 
 a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 
 li {
