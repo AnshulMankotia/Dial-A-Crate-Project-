@@ -86,7 +86,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     background-color: var(--white-clr);
     min-height: 100vh;
 }
@@ -130,6 +130,7 @@ h4 {
 
 a {
     text-decoration: none;
+    color: initial;
 }
 
 li {
@@ -585,7 +586,7 @@ small {
 
 /* ==================SECTION4-BUYERS -REVIEWS======================== */
 .review-main {
-    margin-top: 6rem;
+    margin: 6rem 0rem;
 }
 
 .reviews-container {

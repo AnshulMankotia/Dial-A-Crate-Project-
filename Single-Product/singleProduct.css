@@ -1,0 +1,247 @@
+:root {
+  --productBody-clr: #f9f9f9;
+  --product-shadow: 0px 1px 20px -6px rgba(0, 0, 0, 0.25);
+
+  --currentPageDisplay-clr: #777777;
+  --productHeading-clr: #282828;
+  --productDescription-clr: #565656;
+  --quatity-clr: #3e3e3e;
+  --checkBox-clr: #fffefe;
+  --checkBoxBorder-clr: #a2a2a2;
+  /* gift conatiner */
+  --giftPrimaryclr: #343434;
+  --giftSecondary-clr: #3e3e3e;
+  /* gift conatiner */
+  --paymentOption-clr: #0f0f0f;
+
+  /*---------- description--------- */
+  --review-clr: #505050;
+  /*---------- description--------- */
+}
+body {
+  background-color: var(--productBody-clr);
+}
+
+.cta-btn3{
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    border-radius: 30px;
+    width: 19rem;
+    padding: 0.8rem 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: 1px solid var(--black-clr);
+    transition: .4s ease-out;
+    outline: none;
+    font-weight: 500;
+}
+.cta-btn3:hover{
+background-color: transparent;
+color: var(--black-clr);
+}
+
+.section1-1 .product {
+  gap: 2rem;
+  padding: 6.25rem 0rem;
+}
+.section1-1 .currentPageDisplay {
+  display: flex;
+  gap: 3.2rem;
+}
+.currentPageDisplay {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--currentPageDisplay-clr);
+  letter-spacing: 0.035em;
+}
+.currentPageDisplay span:first-child:after {
+  content: url(/assets/SingleProductPageImages/rightangle.svg);
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  left: 6%;
+}
+.mainProduct {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.mainProduct .m-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+.mainProduct .m-left .mainImg {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--product-shadow);
+  border: 1px solid #b3b3b3;
+}
+.mainProduct .m-left .mainImg img {
+  padding: 3rem;
+}
+.mainProduct .m-left .subImg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainProduct .m-left .subImg > img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: var(--product-shadow);
+}
+
+.mainProduct .m-right {
+  justify-content: space-between;
+  width: 50%;
+}
+.m-right h4 {
+  color: var(--productHeading-clr);
+  font-weight: 600;
+}
+.m-right p {
+  font-size: 1.25rem;
+  color: var(--productDescription-clr);
+}
+.section1-1 .quantities {
+  display: flex;
+  gap: 3rem;
+}
+.quantities .flex-column {
+  gap: 1rem;
+}
+.quantities input {
+  outline: none;
+  padding: 0.6rem;
+  font-size: 10px;
+  border: 0.5px solid #6A6A6A;
+}
+.quantities .quantity input {
+  width: 4.563rem;
+  text-align: center;
+}
+.quantities .size input{
+    width: 13rem;
+}
+.quantities .quantity {
+  position: relative;
+}
+.quantities .quantity::before {
+  content: "-";
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 14%;
+  font-size: 1.2rem;
+  color: #505050;
+}
+.quantities .quantity::after {
+  content: "+";
+  display: inline-block;
+  position: absolute;
+  top: 57%;
+  right: 14%;
+  font-size: 1.2rem;
+  color: #505050;
+}
+.makeGift h4 {
+  font-size: 1rem;
+  color: var(--giftPrimaryclr);
+}
+.makeGift {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.makeGift label{
+    color: var(--giftSecondary-clr);
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+.section1-1 .addtoCartBtn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} 
+.section1-1 .addtoCartBtn >a{
+    text-align: center;
+    position: relative;
+}
+.section1-1 .addtoCartBtn > a > span{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    top: 150%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--paymentOption-clr);
+}
+
+/* ---------SECTION2-1 DESCRIPTION-------------- */
+.section2-1 .description{
+    padding: 4rem 0;
+    gap: 4rem;
+}
+.description .d-heading{
+    text-align: center;
+}
+.description .d-heading h4{
+    position: relative;
+}
+.description .d-heading h4::after{
+    content: "";
+    width: 9.4rem;
+    background-color: var(--productDescription-clr);
+    position: absolute;
+    display: inline-block;
+    left: 44%;
+    top: 160%;
+    border: 2px solid #000000;
+}
+.description p{
+    font-size: 1.25rem;
+    color: var(--productDescription-clr);
+}
+
+.reviewSection{
+    gap: 1.5rem;
+}
+.header-review span{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--review-clr);
+    cursor: pointer;
+}
+.header-review span:last-child{
+    padding-left: 2rem;
+}
+.reviewSection .writeReview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top: 0.5px solid #A7A7A7;
+    border-bottom: 0.5px solid #A7A7A7;
+    padding: 2rem 0;
+}
+.writeReview button{
+    position: relative;
+}
+.writeReview button::before{
+ content: url(/Single-Product/assets/editIcon.svg);
+ position: absolute;
+ left: 20%;
+ top: 27%;
+}
+/* ---------//SECTION2-1 DESCRIPTION-------------- */
+
+
+
+
+
