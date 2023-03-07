@@ -10,8 +10,16 @@
     overlay.addEventListener("click",()=>{
         searchBar.classList.remove("active")
     });
-
 // ---------------SEARCH DROPDOWN---------------------
+
+// ---------------Cart slider---------------------
+const cartSlider = document.querySelector(".cart-slider");
+const cartIcon = document.querySelector(".cartIcon");
+
+cartIcon.addEventListener("click",()=>{
+    cartSlider.classList.add("active")
+})
+// ---------------Cart slider---------------------
 const add=document.querySelector('.add')
 const sub=document.querySelector('.sub')
 const display=document.querySelector('.display')

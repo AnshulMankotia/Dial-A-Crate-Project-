@@ -247,9 +247,14 @@ i {
 .hero-section {
     width: 100%;
     background-color: var(--hero-clr);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.hero-section .flex-column {
+.hero-section .column:first-child {
+    display: flex;
+    flex-direction: column;
     gap: 6.25rem;
 }
 
@@ -315,7 +320,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10%;
+    top: 12%;
     background-color: white;
     transform: translateY(-200%);
     transition: all 0.4s ease-out;
@@ -344,13 +349,17 @@ transform: translateY(0%);
 }
 /*-------------------- DROPDOWNS---------------- */
 /* -------------Overlay------------ */
-.searchDropdown.active + .overlay{
+.overlay{
     background-color:transparent;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     z-index: 1;
+    display: none;
+}
+.searchDropdown.active + .overlay{
+   display: block;
 } 
 /* -------------Overlay------------ */ 
 
@@ -1268,3 +1277,116 @@ small {
 #age-verify.under .window .underbox {
     top: 0%
 }
+/* ==================DROPDOWN CSS======================== */
+.cart-slider span {
+ color: var(--black-clr);
+}
+.cart-slider .about{
+    gap: 1.8rem;
+}
+.cart-slider {
+ position: absolute;
+ top: 0;
+ right: 0;
+ background: #ffffff;
+ width: 568px;
+ height: 61.6rem;
+ box-shadow: -4px 4px 20px rgb(0 0 0 / 25%);
+ padding: 3rem 5rem;
+ height: 99.8%;
+ box-shadow: 0px 2px 4px -13px rgba(0, 0, 0, 0.25);
+ transform: translateX(100%);
+ transition: .4s ease-out;
+}
+.cart-slider.active{
+    transform: translateX(0%);
+}
+.cart-slider .cart{
+    gap: 3rem;
+}
+
+.cart-products {
+ gap: 4rem;
+ height: 100%;
+ justify-content: space-between;
+}
+.price::after {
+ height: 0.625rem;
+ content: url("/assets/CartPageImages/cross.svg");
+ margin-left: 4rem;
+ width: 0.625rem;
+ cursor: pointer;
+ padding-right: 5rem;
+}
+.productData {
+ gap: 3rem;
+}
+.about {
+ gap: 0.8rem;
+}
+.about-spans {
+ line-height: 0.5;
+}
+.about-spans > span {
+ white-space: nowrap;
+}
+.top-headings span:first-child,
+.Subtotal span:first-child {
+ font-size: 1rem;
+ font-weight: 600;
+ color: var(--span-two);
+}
+.top-headings span:last-child {
+ font-size: 0.75rem;
+ color: var(--span-two);
+}
+.productData .about .about-spans span:last-child,
+.Subtotal span:last-child {
+ display: inline-block;
+ text-transform: capitalize;
+ font-size: 0.815rem;
+ color: var(--primaryCart-clr);
+ font-weight: 600;
+}
+
+/* ==================BOTTOM-CART-CONTENT-CSS======================== */
+.add-coupon,
+.add-coupon img,
+.bottom-cart,
+.top-headings {
+ gap: 1rem;
+}
+
+.bottom-cart-content {
+ gap: 2rem;
+}
+.bottom-cart input {
+ height: 2.375rem;
+}
+.add-coupon img {
+ width: 1.188rem;
+ align-items: center;
+}
+.add-coupon span {
+ font-size: 0.875rem;
+ font-weight: 500;
+}
+.Subtotal {
+ justify-content: space-between;
+}
+
+.btn-X {
+    margin-top: -4.8rem;
+}
+.btn-X::after {
+ height: 0.625rem;
+ content: url(/assets/CartPageImages/cross.svg);
+ margin-left: 2rem;
+ width: 0.625rem;
+ cursor: pointer;
+}
+.cta-btn3,
+.bottom-cart input {
+ width: 25.5rem;
+}
+/* ==================BOTTOM-CART-CONTENT-CSS======================== */

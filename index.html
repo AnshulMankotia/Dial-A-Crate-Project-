@@ -8,6 +8,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/queries.css">
+    <link rel="stylesheet" href="/cart/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +18,7 @@
     <!-- ===================HERO-SECTION================== -->
     <section class="hero-section">
         <div class="container">
-            <div class="flex-column">
+            <div class="column">
                 
                 <header class="header-container">
                     <div class="flex-row">
@@ -96,7 +97,7 @@
                             <a><img class="searchIcon" src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt=""></a>
                             <a href="/Cart/Cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png " alt=""></a>
                             <a href=""><img src="/assets/HomePageImages/HreoSection/userIcon.svg" alt=""></a>
-                            <a href=""><img src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
+                            <a><img class="cartIcon" src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
                         </div>
                     </div>
                 </header>
@@ -117,6 +118,70 @@
                 </div>
             </div>
         </div>
+         <!-- ===================DROPDOWNS================== -->
+    <section class="cart-slider">
+        <div class="cart-products flex-column">
+            <div class="top-headings flex-column">
+                <span>Shopping cart</span>
+                <span>2 items</span>
+            </div>
+ 
+            <div class="cart flex-column">
+                        <div class="productData">
+                            <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                            </div>
+                            <div class="about flex-column">
+                                <div class="about-spans">
+                                    <span>aviation american gin 750ml</span>
+                                    <span>$29.95</span>
+                                </div>
+                                <div class="counter">
+                                    <button class="sub">-</button>
+                                    <input class="display" type="text" placeholder="1">
+                                    <button class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="btn-X"></div>
+                        </div>
+                        <div class="productData">
+                            <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                            </div>
+                            <div class="about flex-column">
+                                <div class="about-spans">
+                                    <span>aviation american gin 750ml</span>
+                                    <span>$29.95</span>
+                                </div>
+                                <div class="counter">
+                                    <button class="sub">-</button>
+                                    <input class="display" type="text" placeholder="1">
+                                    <button class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="btn-X"></div>
+                        </div>
+            </div>
+            <div class="bottom-cart-content flex-column">
+                <div class="bottom-cart flex-column">
+                    <div class="add-coupon flex-row">
+                        <img src="assets/Cart-dropdown/coupon.svg" alt="" srcset="">
+                        <span>Add A Coupon</span>
+                    </div>
+                    <input type="text">
+                    <div class="checkout"></div>
+                </div>
+ 
+                <div class="bottom-cart flex-column">
+                    <div class="Subtotal flex-row">
+                        <span>Subtotal</span>
+                        <span>$79.95</span>
+                    </div>
+                    <button class="cta-btn3">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+ 
+    </section>
+ <!-- ===================//DROPDOWNS================== -->
     </section>
     <!-- ===================//HERO-SECTION================== -->
 
