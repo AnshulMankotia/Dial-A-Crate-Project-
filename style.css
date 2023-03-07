@@ -262,7 +262,7 @@ i {
 
 .nav-container ul {
     display: flex;
-    gap: 2.5rem;
+    /* gap: 2.5rem; */
 }
 
 .nav-container li a {
@@ -304,6 +304,126 @@ i {
 .hero-section .column {
     margin-bottom: 7rem;
 }
+
+/* ===================DROP-MENU=================== */
+.nav-container nav > ul > li{
+   
+    padding: 1.4rem;
+}
+
+.nav-container .spirits-rel{
+    position: relative;
+}
+
+.drop-menu{
+   position: absolute;
+   width: 291px;
+   left: 26.5%;
+   top: 13%;
+   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.25);
+   background-color: var(--white-clr);
+}
+
+.spirits-dropdown{
+   display: none;
+}
+
+.spirits-rel:hover  + .spirits-dropdown{
+    display: block;
+}
+
+.spirits-dropdown:hover{
+
+    display: block;
+}
+
+.scotch:hover + .sub-drop:nth-of-type(1){
+    display: block
+}
+
+.sub-drop:nth-of-type(1):hover{
+    display: block
+}
+
+.tequila:hover + .sub-drop:nth-of-type(2){
+    display: block;
+   
+}
+
+.sub-drop:nth-of-type(2):hover{
+    display: block
+}
+
+.whiskey:hover + .sub-drop:nth-of-type(3){
+    display: block;
+}
+
+.sub-drop:nth-of-type(3):hover{
+    display: block
+}
+
+.drop-menu .arrow{
+    position: relative;
+}
+
+.drop-menu .arrow::after{
+    content: "\f105";
+    font-family: FontAwesome;
+    top: 13px;
+    right: 0;
+    position: absolute;
+}
+
+.sub-drop:nth-of-type(1){
+    display: none;
+    position: absolute;
+    top: 67%;
+    z-index: 2;
+    left: 70%;
+}
+
+.sub-drop:nth-of-type(2){
+    display: none;
+    position: absolute;
+    top: 74%;
+    z-index: 2;
+    left: 70%;
+}
+
+.sub-drop:nth-of-type(3){
+    display: none;
+    top: 83%;
+    left: 70%;
+    position: absolute;
+}
+
+.sub-drop ul li:nth-of-type(8){
+    position: relative;
+}
+
+.drop-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+ 
+}
+
+.drop-menu ul li{
+    padding:0.8rem 0 ;
+    border-bottom: 0.5px solid rgba(180, 180, 180, 0.4) ;
+}
+
+.drop-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.drop-menu ul li a {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #0F0F0F;
+}
+
+/* ===================//DROP-MENU=================== */
 
 /* ==================//HERO-SECTION CSS======================== */
 
