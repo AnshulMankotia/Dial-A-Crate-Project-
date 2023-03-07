@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/queries.css">
+    <link rel="stylesheet" href="/cart/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +18,7 @@
     <!-- ===================HERO-SECTION================== -->
     <section class="hero-section">
         <div class="container">
-            <div class="flex-column">
+            <div class="column">
 
                 <header class="header-container">
                     <div class="flex-row">
@@ -26,7 +28,63 @@
                         <div class="nav-container">
                             <nav>
                                 <ul>
-                                    <li><a href="">Spirits</a></li>
+                                    <li class="spirits-rel"><a href="">Spirits</a></li>
+                                    <!-- -------- DROPDOWN-SPIRITS-MENU--------- -->
+                                    <div class="drop-menu spirits-dropdown">
+                                        <ul>
+                                            <li><a href="">All Spirits</a></li>
+                                            <li><a href="">Brandy</a></li>
+                                            <li><a href="">Canned Codktails</a></li>
+                                            <li><a href="">Cognac</a></li>
+                                            <li><a href="">Gin</a></li>
+                                            <li><a href="">Liqueur</a></li>
+                                            <li><a href="">Mezcal</a></li>
+                                            <li><a href="">Rum</a></li>
+                                            <li class="arrow scotch"><a href="">Scotch</a></li>
+                                            <!--------SCOTCH-MENU------ -->
+                                            <div class="drop-menu sub-drop">
+                                                <ul>
+                                                    <li><a href="">All Scotch</a></li>
+                                                    <li><a href="">Rare Scotch</a></li>
+                                                    <li><a href="">Peated Scotch</a></li>
+                                                </ul>
+                                            </div>
+                                            <!--------//SCOTCH-MENU------ -->
+                                            <li class="arrow tequila"><a href="">Tequila</a></li>
+                                            <!--------TEQUILA-MENU------ -->
+                                            <div class="drop-menu sub-drop">
+                                                <ul>
+                                                    <li><a href="">All Tequila</a></li>
+                                                    <li><a href="">Rare Tequila</a></li>
+                                                    <li><a href="">Anejo</a></li>
+                                                    <li><a href="">Blanco</a></li>
+                                                    <li><a href="">Cristanlio</a></li>
+                                                    <li><a href="">Extra Anejo</a></li>
+                                                    <li><a href="">Flavored Tequila</a></li>
+                                                    <li><a href="">Gold</a></li>
+                                                    <li><a href="">Reposado</a></li>
+                                                </ul>
+                                            </div>
+                                            <!--------//TEQUILA-MENU------ -->
+                                            <li class="arrow whiskey"><a href="">Whiskey</a></li>
+                                            <!--------WHISKEY-MENU------ -->
+                                            <div class="drop-menu sub-drop">
+                                                <ul>
+                                                    <li><a href="">All Whiskey</a></li>
+                                                    <li><a href="">Rare Whiskey</a></li>
+                                                    <li><a href="">Boubon Whiskey</a></li>
+                                                    <li><a href="">Canadian Whiskey</a></li>
+                                                    <li><a href="">Flavored Whiskey</a></li>
+                                                    <li><a href="">Irish Whiskey</a></li>
+                                                    <li><a href="">Japanese Whiskey</a></li>
+                                                    <li><a href="">Rye Whiskey</a></li>
+                                                </ul>
+                                            </div>
+                                            <!--------//WHISKEY-MENU------ -->
+                                            <li><a href="">Vodka</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- -------- //DROPDOWN-SPIRITS-MENU--------- -->
                                     <li><a href="">Mixers & Fruit</a></li>
                                     <li><a href="/champagne/champagne.html">Champagne</a></li>
                                     <li><a href="/wine-page/wine.html">Wine</a></li>
@@ -36,7 +94,8 @@
                             </nav>
                         </div>
                         <div class="icon-container">
-                            <a href=""><img src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt=""></a>
+                            <a><img class="searchIcon" src="/assets/HomePageImages/HreoSection/searchIcon.svg"
+                                    alt=""></a>
                             <a href="/Cart/Cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png "
                                     alt=""></a>
                             <button class="LogIn bg_none"><img src="/assets/HomePageImages/HreoSection/userIcon.svg"
@@ -61,9 +120,9 @@
                                 </div>
                             </div>
 
-                             <!-- //LOGIN SLIDER -->
+                            <!-- //LOGIN SLIDER -->
 
-                            <a href=""><img src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
+                            <a><img class="cartIcon" src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
                         </div>
 
                     </div>
@@ -73,9 +132,14 @@
                         <div class="content-container">
                             <h1>Bringing the Bar to <br> Your Doorstep</h1>
                             <p>Never Run Out of Booze Again: Get Alcohal Delivered Anytime, <br> Anywhere</p>
-                            <div class="btn-container"><a href="">
-                                    <button class="cta-btn1">All Spirits</button></a>
-                                <a href=""><button class="cta-btn2">Order now</button></a>
+                            <div class="btn-container">
+                                <a href="/categories/categories.html">
+                                    <button class="cta-btn1">All
+                                        Spirits</button>
+                                </a>
+                                <a href="/Cart/Cart.html">
+                                    <button class="cta-btn2">Order now</button>
+                                </a>
                             </div>
                         </div>
                         <div class="image-container">
@@ -85,12 +149,87 @@
                 </div>
             </div>
         </div>
+        <!-- ===================DROPDOWNS================== -->
+        <section class="cart-slider">
+            <div class="cart-products flex-column">
+                <div class="top-headings flex-column">
+                    <span>Shopping cart</span>
+                    <span>2 items</span>
+                </div>
 
+                <div class="cart flex-column">
+                    <div class="productData">
+                        <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                        </div>
+                        <div class="about flex-column">
+                            <div class="about-spans">
+                                <span>aviation american gin 750ml</span>
+                                <span>$29.95</span>
+                            </div>
+                            <div class="counter">
+                                <button class="sub">-</button>
+                                <input class="display" type="text" placeholder="1">
+                                <button class="add">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-X"></div>
+                    </div>
+                    <div class="productData">
+                        <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                        </div>
+                        <div class="about flex-column">
+                            <div class="about-spans">
+                                <span>aviation american gin 750ml</span>
+                                <span>$29.95</span>
+                            </div>
+                            <div class="counter">
+                                <button class="sub">-</button>
+                                <input class="display" type="text" placeholder="1">
+                                <button class="add">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-X"></div>
+                    </div>
+                </div>
+                <div class="bottom-cart-content flex-column">
+                    <div class="bottom-cart flex-column">
+                        <div class="add-coupon flex-row">
+                            <img src="assets/Cart-dropdown/coupon.svg" alt="" srcset="">
+                            <span>Add A Coupon</span>
+                        </div>
+                        <input type="text">
+                        <div class="checkout"></div>
+                    </div>
 
+                    <div class="bottom-cart flex-column">
+                        <div class="Subtotal flex-row">
+                            <span>Subtotal</span>
+                            <span>$79.95</span>
+                        </div>
+                        <button class="cta-btn3">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <!-- ===================//DROPDOWNS================== -->
     </section>
     <!-- ===================//HERO-SECTION================== -->
 
+
+    <!-- ===============================DROPDOWNS============================== -->
+    <!-- --------------search dropdown---------- -->
+    <div class="searchDropdown">
+        <div class="searchContainer">
+            <input type="text" placeholder="seacrh entire store here...">
+            <img src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt="">
+        </div>
+    </div>
+    <!-- --------------search dropdown ------------>
+    <div class="overlay">
+
+    </div>
+    <!-- ===============================//DROPDOWNS============================== -->
 
     <!----------------- SECTION 1 -------------------------->
     <section class="section1">
@@ -153,7 +292,7 @@
                         us deliver <br>
                         the booze to your door!
                     </p>
-                    <a href="">
+                    <a href="/categories/categories.html">
                         <button class="cta-btn1">All Spirits</button>
                     </a>
                 </div>
@@ -933,7 +1072,7 @@
 
 
     <!------------------ //FOOTER SECTION -------------------------->
-  <script src="/main.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
