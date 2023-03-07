@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,7 +37,7 @@
                             </nav>
                         </div>
                         <div class="icon-container">
-                            <a href=""><img src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt=""></a>
+                            <a><img class="searchIcon" src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt=""></a>
                             <a href="/Cart/Cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png " alt=""></a>
                             <a href=""><img src="/assets/HomePageImages/HreoSection/userIcon.svg" alt=""></a>
                             <a href=""><img src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
@@ -49,8 +50,8 @@
                             <h1>Bringing the Bar to <br> Your Doorstep</h1>
                             <p>Never Run Out of Booze Again: Get Alcohal Delivered Anytime, <br> Anywhere</p>
                             <div class="btn-container"><a href="">
-                                    <button class="cta-btn1">All Spirits</button></a>
-                                <a href=""><button class="cta-btn2">Order now</button></a>
+                                    <a href="/categories/categories.html"><button class="cta-btn1">All Spirits</button></a>
+                                <a href="/Cart/Cart.html"><button class="cta-btn2">Order now</button></a>
                             </div>
                         </div>
                         <div class="image-container">
@@ -59,6 +60,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- ===============================DROPDOWNS============================== -->
+        <!-- --------------search dropdown---------- -->
+        <div class="searchDropdown">
+            <div class="searchContainer">
+                <input type="text" placeholder="seacrh entire store here...">
+                <img src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt="">
+            </div>
+        </div>
+        <!-- --------------search dropdown ------------>
+        <!-- ===============================//DROPDOWNS============================== -->
+        <div class="overlay">
+            
         </div>
     </section>
     <!-- ===================//HERO-SECTION================== -->
@@ -125,7 +140,7 @@
                         us deliver <br>
                         the booze to your door!
                     </p>
-                    <a href="">
+                    <a href="/categories/categories.html">
                         <button class="cta-btn1">All Spirits</button>
                     </a>
                 </div>
@@ -896,7 +911,7 @@
         </div>
     </div>
     <!------------------ //FOOTER SECTION -------------------------->
-
+<script src="/main.js"></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
