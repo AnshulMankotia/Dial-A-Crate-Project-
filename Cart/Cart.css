@@ -63,7 +63,11 @@ table,thead,td{
     color: var(--black-clr);
     font-weight: 500;
 }
-.total-price::after{
+.total-price button{
+    background-color: transparent;
+    border: none;
+}
+.total-price button::after{
     height: 10px;
     content: url(/assets/CartPageImages/cross.svg);
     margin-left: 2rem;
