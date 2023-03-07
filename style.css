@@ -219,7 +219,7 @@ i {
     display: inline-block;
     top: 8px;
     width: 30px;
-    height: 1px;
+    height: 2px;
     background-color: black;
 }
 
@@ -271,6 +271,7 @@ i {
     color: var(--linkFont-clr);
     transition: all 0.3s ease-out;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .nav-container li a:hover {
