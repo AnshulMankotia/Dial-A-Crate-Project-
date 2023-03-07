@@ -309,9 +309,9 @@ i {
     gap: 2rem;
 }
 
-.hero-section .column {
+/* .hero-section .column {
     margin-bottom: 7rem;
-}
+} */
 /*-------------------- DROPDOWNS---------------- */
 .searchDropdown{
     position: absolute;
@@ -1310,14 +1310,14 @@ small {
  height: 100%;
  justify-content: space-between;
 }
-.price::after {
+/* .price::after {
  height: 0.625rem;
  content: url("/assets/CartPageImages/cross.svg");
  margin-left: 4rem;
  width: 0.625rem;
  cursor: pointer;
  padding-right: 5rem;
-}
+} */
 .productData {
  gap: 3rem;
 }
