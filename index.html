@@ -17,7 +17,7 @@
     <section class="hero-section">
         <div class="container">
             <div class="flex-column">
-                
+
                 <header class="header-container">
                     <div class="flex-row">
                         <div class="logo-container"><a href="/index.html"><img
@@ -28,19 +28,44 @@
                                 <ul>
                                     <li><a href="">Spirits</a></li>
                                     <li><a href="">Mixers & Fruit</a></li>
-                                    <li><a href="/Champagne/champagne.html">Champagne</a></li>
-                                    <li><a href="/Wine-page/wine.html">Wine</a></li>
+                                    <li><a href="/champagne/champagne.html">Champagne</a></li>
+                                    <li><a href="/wine-page/wine.html">Wine</a></li>
                                     <li><a href="/Contact-two/contact-two.html">Contact</a></li>
-                                    <li><a href="/Blog-page/blog.html">Blog</a></li>
+                                    <li><a href="/blog-page/blog.html">Blog</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="icon-container">
                             <a href=""><img src="/assets/HomePageImages/HreoSection/searchIcon.svg" alt=""></a>
-                            <a href="/Cart/Cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png " alt=""></a>
-                            <a href=""><img src="/assets/HomePageImages/HreoSection/userIcon.svg" alt=""></a>
+                            <a href="/Cart/Cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png "
+                                    alt=""></a>
+                            <button class="LogIn bg_none"><img src="/assets/HomePageImages/HreoSection/userIcon.svg"
+                                    alt=""></button>
+                            <!-- LOGIN SLIDER -->
+                            <div class="log__overlay">
+                            </div>
+                            <div class="login-page ">
+                                <div class="login-container">
+                                    <p class="bold">Log In</p>
+                                    <form action="">
+                                        <label for="email"><small>Email Address</small></label>
+                                        <input type="email" name="" id="email"> <br>
+                                        <label for=""><small>Password</small></label>
+                                        <input type="password" name="" id="password"> <br>
+                                        <input class="input-submit" type="submit" value="Log In"> <br>
+                                        <small class="text-center">Forget Your password</small> <br>
+                                        <a href="/contact-page/Contact.html"><button class="cta-btn3">CREATE
+                                                AN
+                                                ACCOUNT</button></a>
+                                    </form>
+                                </div>
+                            </div>
+
+                             <!-- //LOGIN SLIDER -->
+
                             <a href=""><img src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
                         </div>
+
                     </div>
                 </header>
                 <div class="column">
@@ -60,6 +85,9 @@
                 </div>
             </div>
         </div>
+
+
+
     </section>
     <!-- ===================//HERO-SECTION================== -->
 
@@ -876,16 +904,16 @@
         </div>
     </footer>
 
-
+    <!--------------------- Age-Verification-dropdown ----------------------->
     <div id="age-verify">
-        <div class="window active">
+        <div class="window">
             <span class="logo"><img src="/assets/HomePageImages/HreoSection/logo.svg" alt=""></span>
             <span class="title">Please Verify You are 21+ Year <br> of Age</span>
             <div class="btn-container">
                 <button class="yes cta-btn2" onclick="overAge()">Yes</button>
                 <button class="no cta-btn2" onclick="underAge()">No</button>
             </div>
-            
+
             <p class="margin">By entering this site you are agreeing to the Terms of Use and Privacy Policy.</p>
             <div class="underBox">
                 <span class="title">Sorry!</span>
@@ -895,23 +923,17 @@
             <span>
         </div>
     </div>
+    <!---------------------// Age-Verification-dropdown ----------------------->
+
+
+
+    <!--------------------- Log-in-dropdown ----------------------->
+
+    <!--------------------- //Log-in-dropdown ----------------------->
+
+
     <!------------------ //FOOTER SECTION -------------------------->
-
+  <script src="/main.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script>
-    overAge = function () {
-  $('#age-verify').addClass('hidden');
-}
-window.onload = function() {
-  document.querySelector('.window').classList.add = 'active';
-};
-// underAge = function () {
-//   $('#age-verify').addClass('under');
-// }
 
-// goBack = function () {
-//     window.history.back();
-// }
-</script>
 </html>
