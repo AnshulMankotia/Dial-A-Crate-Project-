@@ -1,4 +1,37 @@
 
+
+// ---------------Cart slider---------------------
+const toClick = document.querySelector('.LogIn')
+const toBlock = document.querySelector('.log__overlay')
+const toActive = document.querySelector('.login-page')
+
+toClick.addEventListener('click', () => {
+    toBlock.style.display = "block";
+    toActive.classList.add("open");
+});
+
+toBlock.addEventListener('click', () => {
+    toActive.classList.remove("open");
+    toBlock.style.display = "none";
+});
+
+
+
+const cartSlider = document.querySelector(".cart-slider");
+const cartIcon = document.querySelector(".cartIcon");
+cartIcon.addEventListener("click", () => {
+    cartSlider.classList.add("active")
+    toBlock.style.display = "block";
+});
+
+
+toBlock.addEventListener('click', () => {
+    toBlock.style.display = "none";
+    cartSlider.classList.remove("active")
+});
+
+
+
 // ---------------SEARCH DROPDOWN---------------------
 const searchBar = document.querySelector(".searchDropdown");
 const searchIcon = document.querySelector(".searchIcon");
@@ -16,38 +49,6 @@ overlay.addEventListener("click", () => {
 
 
 
-// ---------------Cart slider---------------------
-const cartSlider = document.querySelector(".cart-slider");
-const cartIcon = document.querySelector(".cartIcon");
-const toClick = document.querySelector('.LogIn')
-const toBlock = document.querySelector('.log__overlay')
-const toActive = document.querySelector('.login-page')
-const clickYes = document.querySelector('.yes')
-const clickNo = document.querySelector('.no')
-const addhidden = document.querySelector('#age-verify')
-const towindow = document.querySelector('.window')
-window.addEventListener("load", () => {
-    towindow.classList.add("active")
-});
-clickYes.addEventListener('click', () => {
-    addhidden.classList.add("hidden")
-});
-clickNo.addEventListener('click', () => {
-    addhidden.classList.add("")
-});
-toClick.addEventListener('click', () => {
-    toBlock.style.display = "block";
-    toActive.classList.add("open");
-});
-toBlock.addEventListener('click', () => {
-    toBlock.style.display = "none";
-    toActive.classList.remove("open");
-    cartSlider.classList.remove("active")
-});
-cartIcon.addEventListener("click", () => {
-    cartSlider.classList.add("active")
-    toBlock.style.display = "block";
-});
 
 
 const add = document.querySelector('.add')
