@@ -193,6 +193,11 @@ i {
     cursor: pointer;
     font-size: 1.125rem;
 }
+.cta-btn4{
+    background: var(--discoundPrice-clr);
+    color: #fff;
+    border: none;
+}
 
 .cta-btn3:hover {
     background-color: transparent;
@@ -211,7 +216,17 @@ i {
 .grid {
     display: grid;
 }
+.tab_nav-container{
+    display: none;
+}
 
+.menu_icon {
+    display: none;
+    font-size: 1.3rem;
+}
+#tab{
+    display: none;
+}
 /* ===================ARROW-SLIDER-COMPONENT================== */
 .right-arrow {
     position: relative;
@@ -593,7 +608,7 @@ i {
 /* ------------ GRID CARD CSS---- */
 .section2 .cards {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .section2 .card {
@@ -1211,6 +1226,7 @@ small {
     transition: all 0.3s ease;
     display: flex;
     justify-content: center;
+    z-index: 99;
 }
 
 #age-verify .window {
@@ -1449,7 +1465,7 @@ small {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 32.75rem;
+   width: 30rem;
     height: 100%;
     background: var(--white-clr);
     padding: 5rem;
@@ -1499,9 +1515,9 @@ small {
 }
 
 .login-container form input,
-.cta-btn3 {
+.cta-btn4 {
     height: 2.8rem;
-    width: 25.438rem;
+   width: 100%;
 }
 
 .input-submit {
