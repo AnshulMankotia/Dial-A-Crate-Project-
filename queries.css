@@ -264,8 +264,26 @@
 
     #tab {
         display: block;
+    
     }
-
+    
+.searchDropdown .searchContainer {
+    width: 51%;
+    height: 3rem;
+    position: relative;
+}
+    .searchContainer input {
+        width: 199px;
+        height: 100%;
+        padding-left: 1rem;
+    }
+    .searchContainer img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10%;
+        top: 28%;
+    }
     .nav-container {
         display: none;
     }
@@ -326,7 +344,7 @@
 
     h1 {
         font-size: 3rem;
-        line-height: 3.875rem;
+        line-height: 3.5rem;
     }
 
     h2 {
@@ -344,7 +362,7 @@
     }
 
     .cta-btn1 {
-        width: 6.688rem;
+        width: 8.688rem;
         height: 3.1rem;
         font-size: 0.9rem;
     }
@@ -361,16 +379,16 @@
 
 
     .hero-section .column:first-child {
-        gap: 6.25rem;
+        gap: 3rem;
     }
 
     .hero-section {
-        min-height: 80vh;
+        min-height: 61vh;
 
     }
 
     .hero-section .btn-container {
-        margin-top: 5.25rem;
+        margin-top: 3rem;
     }
 
     .hero-section .image-container img {
@@ -420,9 +438,14 @@
     }
 
     .section1 .about {
-        flex-direction: column;
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
 
+
+    }
+    .section1 .about  .delivery{
+     grid-column: 1/4;
+          
     }
     .section1 .about {
         justify-content: space-around;
@@ -454,7 +477,7 @@
         text-align: center;
     }
     .section2 .cards {
-        grid-template-columns: 50% 50% !important;
+        grid-template-columns: 48% 48% !important;
     }
     .section2 .card img {
         height: 150px;
@@ -495,7 +518,15 @@
     .bestseller-container {
         gap: 0rem;
     }
-
+    .review-card .card-container{
+    /* margin-bottom: -2.5rem; */
+    }
+    .total-reviews{
+        width: 200%;
+    }
+    .section5 {
+        margin-top: -4rem;
+    }
     .section5 .blogCards {
         gap: 2rem;
         flex-direction: column;
@@ -516,7 +547,7 @@
 
     .review-heading {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .review-heading h5 {
@@ -524,7 +555,7 @@
     }
 
     .reviews-container {
-        gap: 2rem;
+        gap: 1rem;
         margin-top: -5rem;
     }
 
@@ -560,7 +591,10 @@
         padding: 1.5rem 1.5rem;
     }
 
-    .left-heading,
+    .left-heading{
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
     .right-heading {
         flex-direction: column;
         gap: 0.5rem;
@@ -851,7 +885,8 @@
     .close-Tequila {
         display: flex;
         align-items: center;
-        padding-left: 1rem;
+        /* justify-content: end; */
+        transform: rotate(180deg);
     }
 
     .whiskey-sub-drop {

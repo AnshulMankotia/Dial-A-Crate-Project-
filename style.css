@@ -538,10 +538,11 @@ i {
 }
 
 .section1 .about {
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     padding: 6.25rem 0rem;
 }
-
 .section1 .column .icon {
     height: 66px;
     width: 74px;
@@ -746,9 +747,8 @@ h5 {
 }
 
 .bestseller-item .reviews {
-    width: 10.415rem;
+    width: 13.415rem;
     justify-content: space-between;
-    margin-inline: auto;
 }
 
 .bestseller-item .reviews img {
@@ -934,7 +934,7 @@ small {
 
 .thumb {
     height: 1rem;
-    width: 1rem;
+    width: 1rem !important;
 }
 
 .semibold {
