@@ -611,7 +611,7 @@
             </div>
         </div>
         <!-- tab -->
-        <div id="tab" class="auto_owl-carousel owl-carousel owl-theme">
+        <div id="tab1" class="owl-carousel owl-theme">
             <div class="item container">
                 <div class="bestseller-item">
                     <div class="image">
@@ -832,6 +832,7 @@
             </div>
             <div class="review-heading flex-row">
                 <div class="left-heading flex-row">
+                    <p>Based on 5,146 reviews</p>
                     <h5>4.7</h5>
                     <div class="star-images flex-row">
                         <img src="/assets/HomePageImages/Reviews/star.svg" alt="">
@@ -840,7 +841,8 @@
                         <img src="/assets/HomePageImages/Reviews/star.svg" alt="">
                         <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="">
                     </div>
-                    <p>Based on 5,146 reviews</p>
+                   
+                   
                 </div>
                 <div class="right-heading flex-row">
                     <h5>95%</h5>
@@ -1075,7 +1077,7 @@
 
 
         <!-- TAB -->
-        <div id="tab" class="owl-carousel owl-theme  review-card">
+        <div id="tab" class="tab-carousel-review owl-carousel owl-theme  review-card">
             <div class="item">
                 <div class="container">
                     <div class="card-container flex-row">
@@ -1361,7 +1363,7 @@
 
         </div>
         <!-- tab -->
-        <div id="tab" class="owl-carousel owl-theme">
+        <div id="tab" class="tab-carousel owl-carousel owl-theme">
             <div class="item container">
                 <div class="card" id="card1">
                     <div class="column1">
@@ -1705,10 +1707,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
 
     <script src="/main.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+ 
 
     <script>
         const clickYes = document.querySelector('.yes')
@@ -1730,7 +1733,7 @@
     </script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.tab-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -1746,6 +1749,52 @@
                 }
             }
         })
+    </script>
+    <script>
+        $('.tab-carousel-review').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
+    <script>
+        var owl = $('#tab1');
+    owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true, responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1.5
+                },
+                1000: {
+                    items: 2
+                }
+            }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[2000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
     </script>
 
 </body>

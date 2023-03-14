@@ -21,6 +21,7 @@ const closeSTequila = document.querySelector("#closetequila")
 const closeWhiskey = document.querySelector("#closewhiskey")
 
 
+
 toClick.addEventListener('click', () => {
     toBlock.style.display = "block";
     toActive.classList.add("open");
@@ -62,10 +63,11 @@ closeScotch.addEventListener('click',()=>{
 });
 closeSTequila.addEventListener('click',()=>{
     tequilaNAv.classList.remove("active")
-})
+});
 closeWhiskey.addEventListener('click',()=>{
     whiskeyNAv.classList.remove("active")
-})
+});
+
 
 
 
@@ -80,8 +82,8 @@ cartIcon.addEventListener("click", () => {
 toBlock.addEventListener('click', () => {
     toBlock.style.display = "none";
     cartSlider.classList.remove("active")
+    filterslider.classList.remove("active")
 });
-
 
 
 // ---------------SEARCH DROPDOWN---------------------
@@ -121,14 +123,29 @@ sub.addEventListener('click', () => {
     }
 });
 
+
+// -----filter-slider-----//
+// const filterbtn = document.querySelector(".filter-btn")
+// const filterslider = document.querySelector(".filter-slider")
+// filterbtn.addEventListener('click',() => {
+//     filterslider.classList.add("active")
+//     toBlock.style.display = "block";
+// });
+// ----//filter-slider----//
+
 // ACCORDION
 const accordion = document.getElementsByClassName('accordion');
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
+    
   })
 }
+
+
+
+
 
 
 

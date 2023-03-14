@@ -224,7 +224,7 @@ i {
     display: none;
     font-size: 1.3rem;
 }
-#tab{
+#tab , #tab1{
     display: none;
 }
 /* ===================ARROW-SLIDER-COMPONENT================== */
@@ -290,7 +290,6 @@ i {
     width: 10.938rem;
     height: 2.75rem;
 }
-
 .nav-container ul {
     display: flex;
     /* gap: 2.5rem; */
@@ -709,7 +708,7 @@ i {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     padding: 3rem 1rem;
     width: 18.438rem;
     height: 28.813rem;
@@ -1671,3 +1670,348 @@ small {
     text-align: center;
 }
 /* ---------//SECTION-NEWS-------- */
+
+
+
+
+/* ----CATEGORIES---- */
+.background-bg {
+    background: var(--card-clr6);
+}
+
+.page-navigation {
+    margin: 5rem 0 3rem 0;
+}
+
+.champagne .main {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.champagne .product-container .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.page-navigation span i {
+    margin: 0 1rem;
+}
+
+.page-navigation p a {
+    color: var(--black-clr);
+}
+
+.shortby-button {
+    align-items: center;
+    gap: 1rem;
+    margin: 2.4rem 0;
+    position: relative;
+}
+
+.shortby-button select {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+    width: 10rem;
+    padding: 0 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    display: inline-block;
+}
+
+.shortby-button::after {
+    content: "\f107";
+    position: absolute;
+    top: 34.5%;
+    left: 23.5%;
+    font-family: FontAwesome;
+    color: black
+}
+
+.shortby-button select:focus {
+    outline: none;
+}
+
+.shortby-button option {
+    padding: 0 2rem;
+}
+
+.categories-nev-bar ul>li:first-child {
+    margin-bottom: 3rem;
+}
+
+.product-container .content {
+    padding: 2rem 0 1rem 0;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem; 
+}
+.product-container .content .para{
+    margin-top: -1rem;
+    font-size: 0.725rem;
+    line-height: 1rem;
+}
+.categories-nev-bar li {
+    margin-bottom: 1rem;
+}
+
+.categories-nev-bar a {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.item-container {
+    padding: 0.4rem 0 0 0;
+}
+
+.page-navigation-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.recent-viewed {
+    background: var(--icon-clr);
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.recent-viewed .heading h1 {
+    color: var(--blogCard-crl);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ----//CATEGORIES---- */
+
+/* -----------SECTION-NEWS-------- */
+.news .heading h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ---------//SECTION-NEWS-------- */
+
+/* filter-slider */
+.filter-slider{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    padding: 2rem;
+    width: 85%;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 16;
+}
+.filter-slider.active{
+    transform: translateX(0%);
+}
+/* //filter-slider */
+
+
+
+/*-------------- CART------------- */
+:root{
+    --primaryCart-clr: #282828;
+    --couponPara-cle:#6C6C6C;
+    --couponcode-clr:#ADADAD;
+    ----bottlnameClr:#272727;
+}
+
+.section3-1 .container{
+
+    min-height: 100vh;
+}
+.section3-1 table th{
+    text-align:start;
+    padding:1.4rem 2rem;
+    background-color: white;
+}
+.section3-1 table td{
+    padding:0rem 2rem;
+}
+
+.section3-1 .cart{
+    min-height: inherit;
+    justify-content: space-between;
+    padding: 6.25rem 0;
+}
+.productData{
+    display: flex;
+    align-items: center;
+}
+.c-main{
+    gap: 2rem;
+}
+.c-left{
+    width: 70%;
+}
+.c-left table{
+    width: 100%;
+    border-collapse:collapse;
+}
+table,thead,td{
+    border-left: none;
+    border-right: none;
+}
+
+.productData .about span:first-child{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(----bottlnameClr);
+    font-weight:500;
+}
+.productData .about span:last-child{
+    padding-top: 1rem;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 0.815rem;
+    color: var(--primaryCart-clr);
+    font-weight: 400;
+}
+.productData .image{
+  height: 200px;
+  margin-left: -3rem;
+}
+.productData img{
+   min-width: 170px;
+}
+.section3-1 .cart-price , .total-price{
+    color: var(--black-clr);
+    font-weight: 500;
+}
+.total-price button{
+    background-color: transparent;
+    border: none;
+}
+.total-price button::after{
+    height: 10px;
+    content: url(/assets/CartPageImages/cross.svg);
+    margin-left: 2rem;
+    width: 10px;
+    cursor: pointer;
+}
+.security{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+.security img{
+    width: 18px;
+}
+
+/* ----------c-right----------- */
+.c-right{
+    justify-content: space-around;
+    width: 30%;
+}
+.c-right h4{
+    font-size:0.815rem ;
+    color: var(--primaryCart-clr);
+}
+.finalTotal{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primaryCart-clr);
+}
+.finalTotal span:last-child{
+    font-size: 1rem;
+}
+
+.checkout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.checkout button{
+    width: 100%;
+}
+.c-right hr{
+    border: 1px solid #000000;
+
+}
+.c-right .subTotal{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.subTotal span:last-child{
+    font-size: 1rem;
+}
+.c-right .coupon{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--primaryCart-clr);
+}
+.c-right .coupon input{
+    padding: 1rem;
+    font-size: 0.815rem;
+    font-weight: 600;
+    color: var(--couponcode-clr);
+    letter-spacing: 0.035em;
+}
+.c-right .coupon p{
+    font-size: 0.75rem;
+    color: var(--couponPara-cle);
+}
+/* ----------c-right----------- */
+
+/* counter button */
+.counter input{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #6A6A6A;
+    user-select: none;
+}
+.counter{
+    position: relative;
+    width: 72px;
+    height: 29px;
+}
+.counter button{
+   position: absolute;
+   height: 100%;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   width: 23px;
+   font-size: 1rem;
+}
+.counter .sub{
+    top: -5%;
+    left: 0;
+}
+.counter .add{
+    top: 0;
+    right: 0;
+}
+/* counter button */
+
+
+
+/*-------------- //CART------------- */
