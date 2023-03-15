@@ -1,3 +1,59 @@
+// HEADER OFF-SET FUNCTION
+(function () {
+
+    var doc = document.documentElement;
+    var w = window;
+    var curScroll;
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curDirection = 0;
+    var prevDirection = 0;
+
+
+    var header = document.querySelector('header');
+    var toggled;
+    var threshold = 50;
+
+    var checkScroll = function () {
+        curScroll = w.scrollY || doc.scrollTop;
+        if (curScroll > prevScroll) {
+
+            curDirection = 2;
+        }
+        else {
+
+            curDirection = 1;
+        }
+
+        if (curDirection !== prevDirection) {
+            toggled = toggleHeader();
+        }
+
+        prevScroll = curScroll;
+        if (toggled) {
+            prevDirection = curDirection;
+        }
+    };
+
+    var toggleHeader = function () {
+        toggled = true;
+        if (curDirection === 2 && curScroll > threshold) {
+            header.classList.add('hide');
+        }
+        else if (curDirection === 1) {
+            header.classList.remove('hide');
+        }
+        else {
+            toggled = false;
+        }
+        return toggled;
+    };
+
+    window.addEventListener('scroll', checkScroll);
+
+})();
+// //HEADER OFF-SET FUNCTION 
+
+
 
 
 // ---------------Cart slider---------------------
@@ -19,6 +75,7 @@ const whiskeyNAv = document.querySelector(".whiskey-sub-drop")
 const closeScotch = document.querySelector("#closescotch")
 const closeSTequila = document.querySelector("#closetequila")
 const closeWhiskey = document.querySelector("#closewhiskey")
+
 
 
 toClick.addEventListener('click', () => {
@@ -62,10 +119,11 @@ closeScotch.addEventListener('click',()=>{
 });
 closeSTequila.addEventListener('click',()=>{
     tequilaNAv.classList.remove("active")
-})
+});
 closeWhiskey.addEventListener('click',()=>{
     whiskeyNAv.classList.remove("active")
-})
+});
+
 
 
 
@@ -80,8 +138,8 @@ cartIcon.addEventListener("click", () => {
 toBlock.addEventListener('click', () => {
     toBlock.style.display = "none";
     cartSlider.classList.remove("active")
+    filterslider.classList.remove("active")
 });
-
 
 
 // ---------------SEARCH DROPDOWN---------------------
@@ -121,14 +179,23 @@ sub.addEventListener('click', () => {
     }
 });
 
+
+// -----filter-slider-----//
+const filterbtn = document.querySelector(".filter-btn")
+const filterslider = document.querySelector(".filter-slider")
+filterbtn.addEventListener('click',() => {
+    filterslider.classList.add("active")
+    toBlock.style.display = "block";
+});
+// ----//filter-slider----//
+
+
 // ACCORDION
 const accordion = document.getElementsByClassName('accordion');
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
+    
   })
 }
-
-
-
