@@ -159,7 +159,14 @@ overlay.addEventListener("click", () => {
 
 
 
-
+// -----filter-slider-----//
+const filterbtn = document.querySelector(".filter-btn")
+const filterslider = document.querySelector(".filter-slider")
+filterbtn.addEventListener('click',() => {
+    filterslider.classList.add("active")
+    toBlock.style.display = "block";
+});
+// ----//filter-slider----//
 
 const add = document.querySelector('.add')
 const sub = document.querySelector('.sub')
@@ -180,14 +187,7 @@ sub.addEventListener('click', () => {
 });
 
 
-// -----filter-slider-----//
-const filterbtn = document.querySelector(".filter-btn")
-const filterslider = document.querySelector(".filter-slider")
-filterbtn.addEventListener('click',() => {
-    filterslider.classList.add("active")
-    toBlock.style.display = "block";
-});
-// ----//filter-slider----//
+
 
 
 // ACCORDION

@@ -286,6 +286,7 @@
 
   .currentPageDisplay {
     margin-bottom: 2rem;
+    
   }
   /* ===========//Cart Page Query Ends===== */
 }
@@ -724,8 +725,8 @@ font-size: 0.825rem;
 }
 .recent-viewed {
     background: var(--icon-clr);
-    padding: 1rem 0 1rem 0 !important;
-    margin-bottom: 0rem !important;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 2rem;
 }
 .shortby-button{
     display: flex;
@@ -877,7 +878,13 @@ padding: 0 1rem;
   }
 
   .currentPageDisplay {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    flex-direction: column;
+}
+
+.currentPageDisplay {
+  display: flex;
+  gap: 2rem;
 }
 
 .total-price button::after {

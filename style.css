@@ -1828,20 +1828,40 @@ small {
   color: var(--black-clr);
   }
   
-  .section1-1 .product {
+ 
+.section1-1 .product {
     gap: 2rem;
     padding: 6.25rem 0rem;
   }
   .currentPageDisplay {
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    gap: 3.2rem;
   }
+  .currentPageDisplay .page-loation {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  }
+  .currentPageDisplay .instant-order{
+    display: flex;
+    flex: 1;
+    color: red;
+  }
+  
   .currentPageDisplay {
+    position: relative;
     font-size: 1rem;
     font-weight: 500;
     color: var(--currentPageDisplay-clr);
     letter-spacing: 0.035em;
+  
+  }
+  .currentPageDisplay span:first-child:after {
+    content: url(/assets/SingleProductPageImages/rightangle.svg);
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 6%;
   }
   .mainProduct {
     justify-content: space-between;
@@ -1860,20 +1880,30 @@ small {
     box-shadow: var(--product-shadow);
     border: 1px solid #b3b3b3;
   }
-  .mainProduct .m-left .mainImg img {
-    padding: 3rem;
+  .mainProduct .m-left .mainImg {
+   height: 25rem;
+   width:25rem;
+  }
+  .mainProduct .m-left .mainImg img{
+    height: 100%;
   }
   .mainProduct .m-left .subImg {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  .mainProduct .m-left .subImg > img {
+  .mainProduct .subImg .product-img{
     background-color: white;
     padding: 1rem;
+    height: 6rem;
     border-radius: 10px;
     box-shadow: var(--product-shadow);
   }
+  
+  .mainProduct .subImg .left{
+    transform: rotateX('-30deg');
+}
+
   
   .mainProduct .m-right {
     justify-content: space-between;
@@ -2255,10 +2285,7 @@ small {
 
 /* -------------CART-CSS-------------- */
 
-.section3-1 .container{
 
-    min-height: 100vh;
-}
 .section3-1 table th{
     text-align:start;
     padding:1.4rem 0rem 0rem 2rem;

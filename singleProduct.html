@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product-info</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="singleProduct.css" />
     <link rel="stylesheet" href="/queries.css">
     <link
       rel="stylesheet"
@@ -14,117 +15,188 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
-  <body class="body-bg-clr2">
-
+  <body>
     <div class="container">
-    <header class="header-container">
-        <div class="flex-row">
-            <div class="logo-container"><a href="/index.html"><img
-                        src="/assets/HomePageImages/HreoSection/navlogo.svg" alt=""></a>
-            </div>
-            <div class="nav-container">
-                <nav>
-                    <ul>
-                        <li class="spirits-rel"><a href="">Spirits</a></li>
-                        <!-- -------- DROPDOWN-SPIRITS-MENU--------- -->
-                        <div class="drop-menu spirits-dropdown">
-                            <ul>
-                                <li><a href="">All Spirits</a></li>
-                                <li><a href="">Brandy</a></li>
-                                <li><a href="">Canned Codktails</a></li>
-                                <li><a href="">Cognac</a></li>
-                                <li><a href="">Gin</a></li>
-                                <li><a href="">Liqueur</a></li>
-                                <li><a href="">Mezcal</a></li>
-                                <li><a href="">Rum</a></li>
-                                <li class="arrow scotch"><a href="">Scotch</a></li>
-                                <!--------SCOTCH-MENU------ -->
-                                <div class="drop-menu sub-drop">
-                                    <ul>
-                                        <li><a href="">All Scotch</a></li>
-                                        <li><a href="">Rare Scotch</a></li>
-                                        <li><a href="">Peated Scotch</a></li>
-                                    </ul>
-                                </div>
-                                <!--------//SCOTCH-MENU------ -->
-                                <li class="arrow tequila"><a href="">Tequila</a></li>
-                                <!--------TEQUILA-MENU------ -->
-                                <div class="drop-menu sub-drop">
-                                    <ul>
-                                        <li><a href="">All Tequila</a></li>
-                                        <li><a href="">Rare Tequila</a></li>
-                                        <li><a href="">Anejo</a></li>
-                                        <li><a href="">Blanco</a></li>
-                                        <li><a href="">Cristanlio</a></li>
-                                        <li><a href="">Extra Anejo</a></li>
-                                        <li><a href="">Flavored Tequila</a></li>
-                                        <li><a href="">Gold</a></li>
-                                        <li><a href="">Reposado</a></li>
-                                    </ul>
-                                </div>
-                                <!--------//TEQUILA-MENU------ -->
-                                <li class="arrow whiskey"><a href="">Whiskey</a></li>
-                                <!--------WHISKEY-MENU------ -->
-                                <div class="drop-menu sub-drop">
-                                    <ul>
-                                        <li><a href="">All Whiskey</a></li>
-                                        <li><a href="">Rare Whiskey</a></li>
-                                        <li><a href="">Boubon Whiskey</a></li>
-                                        <li><a href="">Canadian Whiskey</a></li>
-                                        <li><a href="">Flavored Whiskey</a></li>
-                                        <li><a href="">Irish Whiskey</a></li>
-                                        <li><a href="">Japanese Whiskey</a></li>
-                                        <li><a href="">Rye Whiskey</a></li>
-                                    </ul>
-                                </div>
-                                <!--------//WHISKEY-MENU------ -->
-                                <li><a href="">Vodka</a></li>
-                            </ul>
-                        </div>
-                        <!-- -------- //DROPDOWN-SPIRITS-MENU--------- -->
-                        <li><a href="">Mixers & Fruit</a></li>
-                        <li><a href="champagne.html">Champagne</a></li>
-                        <li><a href="wine.html">Wine</a></li>
-                        <li><a href="contact-two.html">Contact</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="icon-container">
-                <a><img class="searchIcon" src="/assets/HomePageImages/HreoSection/searchIcon.svg"
-                        alt=""></a>
-                <a href="cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png "
-                        alt=""></a>
-                <a class="LogIn bg_none"><img src="/assets/HomePageImages/HreoSection/userIcon.svg"
-                        alt=""></a>
-                <!-- LOGIN SLIDER -->
-                <div class="log__overlay">
+        <header class="header-container">
+            <div class="flex-row ">
+                <div class="logo-container"><a href="/index.html"><img
+                            src="/assets/HomePageImages/HreoSection/navlogo.svg" alt=""></a>
                 </div>
-                <div class="login-page ">
-                    <div class="login-container">
-                        <p class="bold">Log In</p>
-                        <form action="">
-                            <label for="email"><small>Email Address</small></label>
-                            <input type="email" name="" id="email"> <br>
-                            <label for=""><small>Password</small></label>
-                            <input type="password" name="" id="password"> <br>
-                            <input class="input-submit" type="submit" value="Log In"> <br>
-                            <small class="text-center">Forget Your password</small> <br>
-                            <a href="account.html"><button class="cta-btn3">CREATE
-                                    AN
-                                    ACCOUNT</button></a>
-                        </form>
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li class="spirits-rel"><a>Spirits</a></li>
+                            <!-- -------- DROPDOWN-SPIRITS-MENU--------- -->
+                            <div class="drop-menu spirits-dropdown">
+                                <ul>
+                                    <li><a href="">All Spirits</a></li>
+                                    <li><a href="">Brandy</a></li>
+                                    <li><a href="">Canned Codktails</a></li>
+                                    <li><a href="">Cognac</a></li>
+                                    <li><a href="">Gin</a></li>
+                                    <li><a href="">Liqueur</a></li>
+                                    <li><a href="">Mezcal</a></li>
+                                    <li><a href="">Rum</a></li>
+                                    <li class="arrow scotch"><a href="">Scotch</a></li>
+                                    <!--------SCOTCH-MENU------ -->
+                                    <div class="drop-menu sub-drop">
+                                        <ul>
+                                            <li><a href="">All Scotch</a></li>
+                                            <li><a href="">Rare Scotch</a></li>
+                                            <li><a href="">Peated Scotch</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//SCOTCH-MENU------ -->
+                                    <li class="arrow tequila"><a href="">Tequila</a></li>
+                                    <!--------TEQUILA-MENU------ -->
+                                    <div class="drop-menu sub-drop">
+                                        <ul>
+                                            <li><a href="">All Tequila</a></li>
+                                            <li><a href="">Rare Tequila</a></li>
+                                            <li><a href="">Anejo</a></li>
+                                            <li><a href="">Blanco</a></li>
+                                            <li><a href="">Cristanlio</a></li>
+                                            <li><a href="">Extra Anejo</a></li>
+                                            <li><a href="">Flavored Tequila</a></li>
+                                            <li><a href="">Gold</a></li>
+                                            <li><a href="">Reposado</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//TEQUILA-MENU------ -->
+                                    <li class="arrow whiskey"><a href="">Whiskey</a></li>
+                                    <!--------WHISKEY-MENU------ -->
+                                    <div class="drop-menu sub-drop">
+                                        <ul>
+                                            <li><a href="">All Whiskey</a></li>
+                                            <li><a href="">Rare Whiskey</a></li>
+                                            <li><a href="">Boubon Whiskey</a></li>
+                                            <li><a href="">Canadian Whiskey</a></li>
+                                            <li><a href="">Flavored Whiskey</a></li>
+                                            <li><a href="">Irish Whiskey</a></li>
+                                            <li><a href="">Japanese Whiskey</a></li>
+                                            <li><a href="">Rye Whiskey</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//WHISKEY-MENU------ -->
+                                    <li><a href="">Vodka</a></li>
+                                </ul>
+                            </div>
+                            <!-- -------- //DROPDOWN-SPIRITS-MENU--------- -->
+                            <li><a href="">Mixers & Fruit</a></li>
+                            <li><a href="champagne.html">Champagne</a></li>
+                            <li><a href="wine.html">Wine</a></li>
+                            <li><a href="contact-two.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- TAB-NAVBAR -->
+                <div class="tab_nav-container">
+                    <nav>
+                        <div class="nav_heading">
+                            <p>MENU</p> <i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <ul>
+                            <li class="tab_spirits-rel"><a>Spirits</a></li>
+                            <!-- -------- DROPDOWN-SPIRITS-MENU--------- -->
+                            <div class="tab_spirits-dropdown">
+
+                                <ul>
+                                    <div class="nav_heading">
+                                        <p>SPIRITS</p> <i id="closespirits"
+                                            class="fa-regular fa-circle-xmark"></i>
+                                    </div>
+                                    <li><a href="">All Spirits</a></li>
+                                    <li><a href="">Brandy</a></li>
+                                    <li><a href="">Canned Codktails</a></li>
+                                    <li><a href="">Cognac</a></li>
+                                    <li><a href="">Gin</a></li>
+                                    <li><a href="">Liqueur</a></li>
+                                    <li><a href="">Mezcal</a></li>
+                                    <li><a href="">Rum</a></li>
+                                    <li class="arrow_scotch"><a>Scotch</a></li>
+                                    <!--------SCOTCH-MENU------ -->
+                                    <div class="tab_sub-drop ">
+                                        <ul>
+                                            <div class="close-Scotch nav_heading">
+                                                <i id="closescotch" class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <li><a href="">All Scotch</a></li>
+                                            <li><a href="">Rare Scotch</a></li>
+                                            <li><a>Peated Scotch</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//SCOTCH-MENU------ -->
+                                    <li class="arrow_tequila"><a>Tequila</a></li>
+                                    <!--------TEQUILA-MENU------ -->
+                                    <div class="tequila-sub-drop">
+                                        <ul>
+                                            <div class="close-Tequila nav_heading">
+                                                <i id="closetequila" class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <li><a href="">All Tequila</a></li>
+                                            <li><a href="">Rare Tequila</a></li>
+                                            <li><a href="">Anejo</a></li>
+                                            <li><a href="">Blanco</a></li>
+                                            <li><a href="">Cristanlio</a></li>
+                                            <li><a href="">Extra Anejo</a></li>
+                                            <li><a href="">Flavored Tequila</a></li>
+                                            <li><a href="">Gold</a></li>
+                                            <li><a href="">Reposado</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//TEQUILA-MENU------ -->
+                                    <li class="arrow_whiskey"><a>Whiskey</a></li>
+                                    <!--------WHISKEY-MENU------ -->
+                                    <div class="whiskey-sub-drop">
+                                        <ul>
+                                            <div class="close-whiskey nav_heading">
+                                                <i id="closewhiskey" class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <li><a href="">All Whiskey</a></li>
+                                            <li><a href="">Rare Whiskey</a></li>
+                                            <li><a href="">Boubon Whiskey</a></li>
+                                            <li><a href="">Canadian Whiskey</a></li>
+                                            <li><a href="">Flavored Whiskey</a></li>
+                                            <li><a href="">Irish Whiskey</a></li>
+                                            <li><a href="">Japanese Whiskey</a></li>
+                                            <li><a href="">Rye Whiskey</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--------//WHISKEY-MENU------ -->
+                                    <!-- <li><a href="">Vodka</a></li>
+                                </ul> -->
+                            </div>
+                            <!-- -------- //DROPDOWN-SPIRITS-MENU--------- -->
+                            <li><a href="">Mixers & Fruit</a></li>
+                            <li><a href="champagne.html">Champagne</a></li>
+                            <li><a href="wine.html">Wine</a></li>
+                            <li><a href="contact-two.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- //TAB-NAVBAR -->
+                <div class="icon-container">
+                    <a><img class="searchIcon" src="/assets/HomePageImages/HreoSection/searchIcon.svg"
+                            alt=""></a>
+                    <a id="desktop" href="cart.html"><img src="/assets/HomePageImages/HreoSection/hearticon.png "
+                        alt=""></a>
+                    <a class="LogIn bg_none"><img src="/assets/HomePageImages/HreoSection/userIcon.svg"
+                            alt=""></a>
+
+
+                    <a><img class="cartIcon" src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
+                    <div class="menu_icon">
+                        <a><i class="fa-duotone fa-bars"></i></a>
                     </div>
                 </div>
 
-                <!-- //LOGIN SLIDER -->
-
-                <a><img class="cartIcon" src="/assets/HomePageImages/HreoSection/cartIcon.svg" alt=""></a>
             </div>
-
-        </div>
-                </header>
+        </header>
               </div>
 
                <!-- ===============================DROPDOWNS============================== -->
@@ -145,19 +217,25 @@
       <div class="container">
         <div class="product flex-column">
           <div class="currentPageDisplay">
-            <span><a href="/index.html">Home</a></span>
-            <span><a href="">Bumbu XO Rum</a></span>
+            <div class="page-loation">
+                <span><a href="/index.html">Home</a></span>
+                <span><a href="">Bumbu XO Rum</a></span>
+            </div>
+            <div class="instant-order">
+                <i class="fa-solid fa-play-pause"></i>
+                <span>Skip the checkout process-call us to order now!</span>
+            </div>
           </div>
 
           <div class="mainProduct flex-row">
             <div class="m-left">
               <div class="mainImg">
-                <img src="/assets/SingleProductPageImages/BUMBU.svg" alt="">
+                <img  id="main-image"  src="/assets/SingleProductPageImages/BUMBU2.svg" alt="">
               </div>
               <div class="subImg">
-                <img src="/assets/SingleProductPageImages/BUMBU1.svg" alt="">
-                <img src="/assets/SingleProductPageImages/BUMBU2.svg" alt="">
-                <img src="/assets/SingleProductPageImages/BUMBU3.svg" alt="">
+                <img class="product-img left " src="/assets/SingleProductPageImages/BUMBU1.svg" alt="">
+                <img class="product-img active" src="/assets/SingleProductPageImages/BUMBU2.svg" alt="">
+                <img class="product-img right" src="/assets/SingleProductPageImages/BUMBU3.svg" alt="">
               </div>
             </div>
             <div class="m-right flex-column">
@@ -384,97 +462,146 @@
       
       
     <!------------------ FOOTER SECTION -------------------------->
-   <footer class="footer-container">
-    <div class="container">
-        <div class="flex-column">
-            <div class="column">
-                <div class="flex-row">
-                    <div class="inner-column">
-                        <div class="heading-container">
-                            <h4>Shop</h4>
-                        </div>
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="">Gin</a></li>
-                                <li><a href="">Liqueur</a></li>
-                                <li><a href="">Rum</a></li>
-                                <li><a href="">Scotch</a></li>
-                                <li><a href="">Tequila</a></li>
-                                <li><a href="">Wine</a></li>
-                                <li><a href="">Whiskey</a></li>
-                                <li><a href="">Shop All</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="inner-column">
-                        <div class="heading-container">
-                            <h4>Information</h4>
-                        </div>
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Shipping Policy</a></li>
-                                <li><a href="">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="inner-column">
-                        <div class="heading-container">
-                            <h4>Information</h4>
-                        </div>
-                        <div class="footer-content">
-                            <p>Drinking distilled spirits, beer, <br> coolers, wine and other alcoholic <br>
-                                beverages may increase cancer risk, <br> and, during pregnancy, can cause <br> birth
-                                defects. For more information <br> go to <a href="">www.P65Warnings.ca.gov/ <br>
-                                    alcohol</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="inner-column">
-                        <div class="heading-container">
-                            <h4>Newsletter Sign up</h4>
-                        </div>
-                        <div class="footer-content">
-                            <p>Sign up for exclusive updates, new <br>
-                                arrivals & insider only discounts</p>
-                        </div>
-                        <div class="footerSocial-container">
-                            <div class="search-container">
-                                <input type="search" placeholder="enter email address...">
-                                <button>Submit</button>
+    <footer class="footer-container">
+        <div class="container">
+            <div class="flex-column">
+                <div class="column">
+                    <div class="flex-row">
+                        <div id="desktop" class="inner-column ">
+                            <div class="heading-container">
+                                <h4>Shop</h4>
                             </div>
-                            <div class="footericons-container">
-                                <a href=""><img src="/assets/HomePageImages/Footer/facebook.svg" alt=""></a>
-                                <a href=""><img src="/assets/HomePageImages/Footer/instagram.svg" alt=""></a>
-                                <a href=""><img src="/assets/HomePageImages/Footer/pinterest.svg" alt=""></a>
-                                <a href=""><img src="/assets/HomePageImages/Footer/tiktok.svg" alt=""></a>
-                                <a href=""><img src="/assets/HomePageImages/Footer/youtube.svg" alt=""></a>
-                                <a href=""><img src="/assets/HomePageImages/Footer/tweeter.svg" alt=""></a>
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="">Gin</a></li>
+                                    <li><a href="">Liqueur</a></li>
+                                    <li><a href="">Rum</a></li>
+                                    <li><a href="">Scotch</a></li>
+                                    <li><a href="">Tequila</a></li>
+                                    <li><a href="">Wine</a></li>
+                                    <li><a href="">Whiskey</a></li>
+                                    <li><a href="">Shop All</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="desktop" class="inner-column">
+                            <div class="heading-container">
+                                <h4>Information</h4>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Shipping Policy</a></li>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- tab -->
+                        <div id="tab" class="accordion-container">
+                            <div class="accordion">
+                                <div class="  head"> <a>Shop</a></div>
+                                <div class="panel">
+                                    <ul>
+
+                                        <li><a href="">Gin</a></li>
+                                        <li><a href="">Liqueur</a></li>
+                                        <li><a href="">Rum</a></li>
+                                        <li><a href="">Scotch</a></li>
+                                        <li><a href="">Tequila</a></li>
+                                        <li><a href="">Wine</a></li>
+                                        <li><a href="">Whiskey</a></li>
+                                        <li><a href="">Shop All</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion">
+                                <div class=" head"> <a>Information</a></div>
+                                <div class="panel">
+                                    <ul>
+                                        <li><a href="">Privacy Policy</a></li>
+                                        <li><a href="">Shipping Policy</a></li>
+                                        <li><a href="">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- //tab -->
+                        <div class="inner-column">
+                            <div class="heading-container">
+                                <h4>Proposition</h4>
+                            </div>
+                            <div class="footer-content">
+                                <p>Drinking distilled spirits, beer, <br> coolers, wine and other alcoholic <br>
+                                    beverages may increase cancer risk, <br> and, during pregnancy, can cause <br> birth
+                                    defects. For more information <br> go to <a href="">www.P65Warnings.ca.gov/ <br>
+                                        alcohol</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="inner-column">
+                            <div class="heading-container">
+                                <h4>Newsletter Sign up</h4>
+                            </div>
+                            <div class="footer-content">
+                                <p>Sign up for exclusive updates, new <br>
+                                    arrivals & insider only discounts</p>
+                            </div>
+                            <div class="footerSocial-container">
+                                <div class="search-container">
+                                    <input type="search" placeholder="enter email address...">
+                                    <button>Submit</button>
+                                </div>
+                                <div class="footericons-container">
+                                    <a href=""><img src="/assets/HomePageImages/Footer/facebook.svg" alt=""></a>
+                                    <a href=""><img src="/assets/HomePageImages/Footer/instagram.svg" alt=""></a>
+                                    <a href=""><img src="/assets/HomePageImages/Footer/pinterest.svg" alt=""></a>
+                                    <a href=""><img src="/assets/HomePageImages/Footer/tiktok.svg" alt=""></a>
+                                    <a href=""><img src="/assets/HomePageImages/Footer/youtube.svg" alt=""></a>
+                                    <a href=""><img src="/assets/HomePageImages/Footer/tweeter.svg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="flex-row">
-                    <div class="left-content">
-                        <p>Dial A Crate ALl Rights Reserved.</p>
-                    </div>
-                    <div class="payment-container">
+                <div class="column">
+                    <div class="flex-row">
+                        <div class="left-content">
+                            <p>Dial A Crate All Rights Reserved.</p>
+                        </div>
+                        <div class="payment-container">
 
-                        <a href=""><img src="/assets/HomePageImages/Footer/visa.svg" alt=""></a>
-                        <a href=""><img src="/assets/HomePageImages/Footer/mastercard.svg" alt=""></a>
-                        <a href=""><img src="/assets/HomePageImages/Footer/amex.svg" alt=""></a>
-                        <a href=""><img src="/assets/HomePageImages/Footer/applePay.svg" alt=""></a>
-                        <a href=""><img src="/assets/HomePageImages/Footer/discover.svg" alt=""></a>
-                        <a href=""><img src="/assets/HomePageImages/Footer/payPal.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/visa.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/mastercard.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/amex.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/applePay.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/discover.svg" alt=""></a>
+                            <a href=""><img src="/assets/HomePageImages/Footer/payPal.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!------------------ //FOOTER SECTION -------------------------->
+    </footer>
+    <!------------------ //FOOTER SECTION -------------------------->
+
 <script src="/main.js"></script>
-  </body>
+<script>
+    // product-image-slider//
+const  toshowimg = document.getElementById("main-image");
+const images = document.querySelectorAll(".product-img");
+images.forEach((image) =>{
+    image.addEventListener("click", (event) =>{
+        toshowimg.src = event.target.src;
+     document.querySelector(".active")
+    .classList.remove("active");
+    event.target.classList.add("active")
+    })
+});
+// product-image-slider//
+</script>
+  </body>
 </html>
