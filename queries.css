@@ -295,6 +295,48 @@
 
 /* =================MEDIA QUERIS FOR MOBILE-DEVICE============== */
 @media screen and (min-width: 360px) and (max-width: 767px) {
+  /* ====text-slider==== */
+  .text_Slider .info {
+    /* flex-direction: column; */
+    gap: 0.8rem;
+}
+
+
+.bold {
+  font-size: 13px;
+}
+
+.header-container > .flex-row {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+
+.icon-container {
+  gap: 0.4rem;
+}
+
+.header-container .logo-container img {
+  width: 5.5rem;
+  height: 2.75rem;
+}
+
+.icon-container a img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.mobile-text-header{
+  display: block;
+}
+
+.desktop-text-header{
+  display: none;
+}
+  /* ====text-slider==== */
+  
+  
   #desktop {
     display: none;
   }
@@ -407,7 +449,7 @@
   }
 
   .container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .hero-section .column:first-child {
@@ -1111,15 +1153,7 @@ padding: 0 1rem;
   .view-more {
     margin: 3rem 0rem -2rem 0;
   }
-  .header-container .logo-container img {
-    width: 8.5rem;
-    height: 2.75rem;
-  }
-
-  .icon-container a:nth-of-type(2) {
-    width: 20px;
-    height: 20px;
-  }
+ 
 
   .tab_nav-container ul {
     display: block;

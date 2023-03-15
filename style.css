@@ -326,6 +326,48 @@ i {
 
 /* ==================//GENERAL CSS======================== */
 
+
+/* ----------textSlider */
+.text_Slider {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--hero-clr);
+    border-bottom: 1px solid #efefef;
+}
+
+.textYellow-slider{
+    background-color: var(--bg--clr);
+}
+.text_Slider .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:  1rem 0rem;
+    gap: 2rem;
+    align-items: center;
+}
+.text_Slider .info span{
+    color: var(--Text1-clr);
+    /* font-size: 2rem; */
+}
+.text_Slider .info .contact-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.text_Slider .info .contact-container img{
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-text-header{
+    display: none;
+}
+.text_Slider .bold{
+    color: var(--black-clr);
+}
+/* ----------//textSlider *
+
 /* ==================HERO-SECTION CSS======================== */
 .hero-section {
     width: 100%;
@@ -342,7 +384,7 @@ i {
     gap: 6.25rem;
 }
 
-.header-container .flex-row:first-child {
+.header-container > .flex-row {
     justify-content: space-around;
     align-items: center;
 }
