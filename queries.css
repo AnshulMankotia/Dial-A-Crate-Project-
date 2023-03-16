@@ -286,8 +286,9 @@
 
   .currentPageDisplay {
     margin-bottom: 2rem;
-    
+    padding-left:0;
   }
+
   /* ===========//Cart Page Query Ends===== */
 }
 
@@ -474,12 +475,15 @@
 
   .section1 .about {
     justify-content: space-around;
-    padding: 3rem 0rem;
+    padding: 1.5rem 0rem 0 0 ;
   }
   .section1 .about .column {
     display: flex;
     flex-direction: column;
-    gap: 0.825rem;
+    gap: 00.3rem;
+  }
+  .section1 .about .column h4{
+    margin-bottom: -0.5rem;
   }
   .section1 .column .content p {
     color: var(--iconPara-clr);
@@ -512,6 +516,9 @@
     height: 150px;
     transition: 0.3s ease-out;
     margin-top: -1rem;
+  }
+  .section2 .card  h3{
+    font-size: 1.2rem;
   }
   .section2 .card {
     width: 100%;
@@ -569,7 +576,7 @@
 
   .review-heading {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .review-heading h5 {
@@ -614,7 +621,7 @@
   }
 
   .left-heading {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0.5rem;
   }
   .right-heading {
@@ -778,8 +785,9 @@ padding: 0 1rem;
   }
 
   .currentPageDisplay span:first-child:after {
-    left: 20%;
-  }
+    left: 18%;
+    top: 85%;
+}
 
   .description .d-heading h4::after {
     left: 29%;
@@ -880,12 +888,12 @@ padding: 0 1rem;
   .currentPageDisplay {
     margin-bottom: 0rem;
     flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
 }
 
-.currentPageDisplay {
-  display: flex;
-  gap: 2rem;
-}
+
 
 .total-price button::after {
     margin-left: 0rem;
@@ -911,6 +919,8 @@ padding: 0 1rem;
 /*--------------- //Age-Verification-dropdown */
 
 }
+
+
 
 @media (max-width: 1024px) {
   .owl-carousel {
@@ -1044,7 +1054,13 @@ padding: 0 1rem;
     justify-content: space-between;
     padding: 1rem;
     background: black;
-    color: #fff;
+    color: #fff; 
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .nav_heading>.fa-circle-xmark{
+    font-weight: 300;
+    font-size: 1.5rem;
   }
 
   .tequila-sub-drop {
@@ -1095,77 +1111,85 @@ padding: 0 1rem;
   }
 }
 
-@media (max-width: 600px) {
+
+
+
+@media (max-width:600px) {
   .bestseller-item {
-    width: 100%;
-    height: 28.813rem;
-    /* background: var(--card-clr6); */
-    box-shadow: none;
-    border: 1px solid gainsboro;
+      box-shadow: none;
+      border: 1px solid gainsboro;
   }
-  .review-bars {
-    margin: 0 0 0 -1rem;
-    max-width: 90%;
-    margin: auto;
-  }
+
+  /* .review-bars {
+      margin: 0 0 0 -1rem;
+      max-width: 90%;
+      margin: auto;
+  } */
+/* 
   .view-more {
-    margin: 3rem 0rem -2rem 0;
-  }
+      margin: 3rem 0rem -2rem 0;
+  } */
+/* 
   .header-container .logo-container img {
-    width: 8.5rem;
-    height: 2.75rem;
+      width: 8.5rem;
+      height: 2.75rem;
+  } */
+  .review-card .card-container {
+      flex-direction: column;
+      gap: 1rem;
   }
 
   .icon-container a:nth-of-type(2) {
-    width: 20px;
-    height: 20px;
+      width: 20px;
+      height: 20px;
   }
 
   .tab_nav-container ul {
-    display: block;
-    width: 20rem;
+      display: block;
+      width: 20rem;
   }
 
   .cart-slider {
-    width: 22rem;
-    padding: 3rem 2rem;
-    overflow-y: scroll;
+      width: 22rem;
+      padding: 3rem 2rem;
+      overflow-y: scroll;
   }
 
   .cart-slider .productData img {
-    min-width: 3rem;
+      min-width: 3rem;
   }
-
-  .cta-btn3,
+  .productData {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .productData {
+      gap: 1rem;
+  }
+  .cart-slider .cta-btn3{
+      width:95%;
+  }
   .bottom-cart input {
-    width: 100%;
-  }
-
-  .champagne .cta-btn3 {
-    width: 75%;
-  }
-
-  .section1-1 .cta-btn3 {
-    padding: 0.8rem 30px;
+      width:100%;
   }
 
   .productData {
-    position: relative;
+      position: relative;
   }
 
   .productData .btn-X::after {
-    position: absolute;
-    height: 0.4rem;
-    content: url(/assets/CartPageImages/cross.svg);
-    right: 0;
-    top: 2.5rem;
-    width: 0.625rem;
-    cursor: pointer;
+      position: absolute;
+      height: 0.4rem;
+      content: url(/assets/CartPageImages/cross.svg);
+      right: 0;
+      top: 2.5rem;
+      width: 0.625rem;
+      cursor: pointer;
   }
 
   .login-page {
-    width: 22rem;
-    padding: 3rem 2rem;
+      width: 22rem;
+      padding: 3rem 2rem;
   }
 }
 

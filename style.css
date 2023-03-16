@@ -1835,19 +1835,27 @@ small {
   }
   .currentPageDisplay {
     display: flex;
-    gap: 3.2rem;
   }
   .currentPageDisplay .page-loation {
-  flex: 1;
+width: 50%;
   display: flex;
+  min-width: 300px;
   gap: 2rem;
   }
   .currentPageDisplay .instant-order{
     display: flex;
-    flex: 1;
-    color: red;
-  }
+    gap: 1rem;
+    background:#eeeeee;
+    padding: 0.825rem;
+    border-radius: 5px;
   
+  }
+  .currentPageDisplay .instant-order span{
+    color: var(--btn-red);
+  }
+  .currentPageDisplay .instant-order img{
+    width: 1rem;
+  }
   .currentPageDisplay {
     position: relative;
     font-size: 1rem;
@@ -1861,7 +1869,7 @@ small {
     display: inline-block;
     position: absolute;
     top: 1px;
-    left: 6%;
+    left: 8%;
   }
   .mainProduct {
     justify-content: space-between;
@@ -1905,10 +1913,12 @@ small {
 }
 
   
-  .mainProduct .m-right {
+.mainProduct .m-right {
     justify-content: space-between;
     width: 50%;
-  }
+    gap: 1rem;
+    margin-top: 2rem;
+}
   .m-right h4 {
     color: var(--productHeading-clr);
     font-weight: 600;
