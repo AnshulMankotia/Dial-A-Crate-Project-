@@ -8,18 +8,33 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="singleProduct.css" />
     <link rel="stylesheet" href="/queries.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   </head>
   <body>
     <div class="container">
         <header class="header-container">
+                   <!-- textSlider -->
+                   <div class="text_Slider">
+                    <div class="info">
+                        <span class="desktop-text-header">Don't feel like browsing? Just call us to place your
+                            order!</span><span class="mobile-text-header">Call us to place your order!</span>
+                        <div class="contact-container">
+                            <img src="/assets/HomePageImages/HreoSection/Vector.svg" alt="">
+                            <p class="bold">+91 0000045000</p>
+                        </div>
+                    </div>
+                </div>
+                <!--// textSlider -->
             <div class="flex-row ">
                 <div class="logo-container"><a href="/index.html"><img
                             src="/assets/HomePageImages/HreoSection/navlogo.svg" alt=""></a>
@@ -430,31 +445,229 @@
       <!-- ===================//RELATED-PRODUCT-SECTION=========================== -->
 
       <!-- ===================//RECENTLY VIEWED PRODUCTS========================== -->
-      <section class="section3-1">
+      <div class="recent-viewed">
         <div class="container">
-          <div class="recentProducts flex-column">
-            <div class="r-heading">
-              <h4>RECENTLY VIEWED PRODUCTS</h4>
+            <div class="heading">
+                <h1>RECENTLY VIWED PRODUCTS</h1>
             </div>
-            
-            <div class="bestseller-item">
-              <div class="image">
-                  <img src="/assets/categoriesImages/bottle1.svg" alt="">
-              </div>
-              <h5>BUFFELO TRACE</h5>
-              <p class="para">Buffalo Trace Bourbon Whiskey 750ml</p>
-              <div class="price">
-                  <small class="red underline"></small>
-                  <p class="bold">$34.95</p>
-                  <small></small>
-              </div>
-              <div class="tag">
-                  <small>New</small>
-              </div>
-          </div>
-          </div>
+
+            <!-- desktop -->
+            <div id="desktop" class="articles-container">
+                <div class="bestseller-item">
+                    <div class="image">
+                        <img src="/assets/categoriesImages/bottle1.svg" alt="" />
+                    </div>
+                    <h5>BUFFELO TRACE</h5>
+                    <p class="para">Buffalo Trace Bourbon Whiskey 750ml</p>
+                    <div class="price">
+                        <small class="red underline"></small>
+                        <p class="bold">$34.95</p>
+                        <small></small>
+                    </div>
+
+                    <div class="reviews flex-row">
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                        <small>57 Reviews</small>
+                    </div>
+                    <div class="tag">
+                        <small>New</small>
+                    </div>
+                </div>
+                <div class="bestseller-item">
+                    <div class="image">
+                        <img src="/assets/categoriesImages/bottle2.svg" alt="" />
+                    </div>
+                    <h5>CLASE AZUL</h5>
+                    <p class="para">Tequila Clase Azul Reposado 750ml</p>
+                    <div class="price">
+                        <small class="red underline">$159.95</small>
+                        <p class="bold">$34.95</p>
+                        <small>Save $15.00</small>
+                    </div>
+                    <div class="reviews flex-row">
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                        <small>57 Reviews</small>
+                    </div>
+                    <div class="tag">
+                        <small>New</small> <br />
+                        <small class="red">-9%</small>
+                    </div>
+                </div>
+                <div class="bestseller-item">
+                    <div class="image">
+                        <img src="/assets/categoriesImages/bottle3.svg" alt="" />
+                    </div>
+                    <h5>HENNESSY</h5>
+                    <p class="para">Tequila Clase Azul Reposado 750ml</p>
+                    <div class="price">
+                        <small class="red underline"></small>
+                        <p class="bold">$34.95</p>
+                        <small></small>
+                    </div>
+                    <div class="reviews flex-row">
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                        <small>57 Reviews</small>
+                    </div>
+                    <div class="tag">
+                        <small>New</small>
+                    </div>
+                </div>
+                <div class="bestseller-item">
+                    <div class="image">
+                        <img src="/assets/categoriesImages/bottle4.svg" alt="" />
+                    </div>
+                    <h5>100 AONS</h5>
+                    <p class="para">Hennessy V.S. Cognac 750mll</p>
+                    <div class="price">
+                        <small class="red underline">$159.95</small>
+                        <p class="bold">$34.95</p>
+                        <small>Save $15.00</small>
+                    </div>
+                    <div class="reviews flex-row">
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                        <small>57 Reviews</small>
+                    </div>
+                    <div class="tag">
+                        <small>New</small> <br />
+                        <small class="red">-15%</small>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+        <!-- //desktop -->
+
+        <!-- tab -->
+        <!--owl.carousel -->
+        <div id="tab" class="owl-carousel owl-theme">
+            <div class="container">
+                <div class="item">
+                    <div class="bestseller-item">
+                        <div class="image">
+                            <img src="/assets/categoriesImages/bottle1.svg" alt="" />
+                        </div>
+                        <h5>BUFFELO TRACE</h5>
+                        <p class="para">Buffalo Trace Bourbon Whiskey 750ml</p>
+                        <div class="price">
+                            <small class="red underline"></small>
+                            <p class="bold">$34.95</p>
+                            <small></small>
+                        </div>
+
+                        <div class="reviews flex-row">
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                            <small>57 Reviews</small>
+                        </div>
+                        <div class="tag">
+                            <small>New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="bestseller-item">
+                        <div class="image">
+                            <img src="/assets/categoriesImages/bottle2.svg" alt="" />
+                        </div>
+                        <h5>CLASE AZUL</h5>
+                        <p class="para">Tequila Clase Azul Reposado 750ml</p>
+                        <div class="price">
+                            <small class="red underline">$159.95</small>
+                            <p class="bold">$34.95</p>
+                            <small>Save $15.00</small>
+                        </div>
+                        <div class="reviews flex-row">
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                            <small>57 Reviews</small>
+                        </div>
+                        <div class="tag">
+                            <small>New</small> <br />
+                            <small class="red">-9%</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="bestseller-item">
+                        <div class="image">
+                            <img src="/assets/categoriesImages/bottle3.svg" alt="" />
+                        </div>
+                        <h5>HENNESSY</h5>
+                        <p class="para">Tequila Clase Azul Reposado 750ml</p>
+                        <div class="price">
+                            <small class="red underline"></small>
+                            <p class="bold">$34.95</p>
+                            <small></small>
+                        </div>
+                        <div class="reviews flex-row">
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                            <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                            <small>57 Reviews</small>
+                        </div>
+                        <div class="tag">
+                            <small>New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item bestseller-item">
+                    <div class="image">
+                        <img src="/assets/categoriesImages/bottle4.svg" alt="" />
+                    </div>
+                    <h5>100 AONS</h5>
+                    <p class="para">Hennessy V.S. Cognac 750mll</p>
+                    <div class="price">
+                        <small class="red underline">$159.95</small>
+                        <p class="bold">$34.95</p>
+                        <small>Save $15.00</small>
+                    </div>
+                    <div class="reviews flex-row">
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/star.svg" alt="" />
+                        <img src="/assets/HomePageImages/Reviews/starhalf.svg" alt="" />
+                        <small>57 Reviews</small>
+                    </div>
+                    <div class="tag">
+                        <small>New</small> <br />
+                        <small class="red">-15%</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //owl.carousel -->
+        <!-- //tab -->
+    </div>
       <!-- ===================//RECENTLY VIEWED PRODUCTS========================== -->
 
 
@@ -586,11 +799,125 @@
             </div>
         </div>
     </footer>
-    <!------------------ //FOOTER SECTION -------------------------->
+         <!--------------------- Log-in-dropdown ----------------------->
+    <!-- LOGIN SLIDER -->
+    <div class="log__overlay">
+    </div>
+    <div class="login-page ">
+        <div class="login-container">
+            <p class="bold">Log In</p>
+            <form action="">
+                <label for="email"><small>Email Address</small></label>
+                <input type="email" name="" id="email"> <br>
+                <label for=""><small>Password</small></label>
+                <input type="password" name="" id="password"> <br>
+                <input class="input-submit" type="submit" value="Log In"> <br>
+                <small class="text-center">Forget Your password</small> <br>
+                <a href="/account-page/account.html"><button class="cta-btn4">CREATE
+                        AN
+                        ACCOUNT</button></a>
+            </form>
+        </div>
+    </div>
 
+    <!-- //LOGIN SLIDER -->
+    <!--------------------- //Log-in-dropdown ----------------------->
+
+
+    <!-- -----------CART-SLIDER --------------->
+    <section class="cart-slider">
+        <div class="cart-products flex-column">
+            <div class="top-headings flex-column">
+                <span>Shopping cart</span>
+                <span>2 items</span>
+            </div>
+
+            <div class="cart flex-column">
+                <div class="productData">
+                    <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                    </div>
+                    <div class="about flex-column">
+                        <div class="about-spans">
+                            <span>aviation american gin 750ml</span>
+                            <span>$29.95</span>
+                        </div>
+                        <div class="counter">
+                            <button class="sub">-</button>
+                            <input class="display" type="text" placeholder="1">
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <div class="btn-X"></div>
+                </div>
+                <div class="productData">
+                    <div class="image"> <img src="assets/CartPageImages/bottle2.svg" alt="" />
+                    </div>
+                    <div class="about flex-column">
+                        <div class="about-spans">
+                            <span>aviation american gin 750ml</span>
+                            <span>$29.95</span>
+                        </div>
+                        <div class="counter">
+                            <button class="sub">-</button>
+                            <input class="display" type="text" placeholder="1">
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <div class="btn-X"></div>
+                </div>
+            </div>
+            <div class="bottom-cart-content flex-column">
+                <div class="bottom-cart flex-column">
+                    <div class="add-coupon flex-row">
+                        <img src="assets/Cart-dropdown/coupon.svg" alt="" srcset="">
+                        <span>Add A Coupon</span>
+                    </div>
+                    <input type="text">
+                    <div class="checkout"></div>
+                </div>
+
+                <div class="bottom-cart flex-column">
+                    <div class="Subtotal flex-row">
+                        <span>Subtotal</span>
+                        <span>$79.95</span>
+                    </div>
+                    <button class="cta-btn3">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+ <!-- -----------//CART-SLIDER --------------->
+    <!------------------ //FOOTER SECTION -------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="/main.js"></script>
+
 <script>
-    // product-image-slider//
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 2,
+            },
+        },
+    });
+</script>
+  <script>
 const  toshowimg = document.getElementById("main-image");
 const images = document.querySelectorAll(".product-img");
 images.forEach((image) =>{
@@ -601,7 +928,7 @@ images.forEach((image) =>{
     event.target.classList.add("active")
     })
 });
-// product-image-slider//
+
 </script>
   </body>
 </html>
