@@ -1201,6 +1201,12 @@ padding: 0 1rem;
   .whiskey-sub-drop.active {
     transform: translateX(0%);
   }
+  .review-bars {
+    margin: 3rem 0;
+    max-width: 65%;
+    margin-inline: auto;
+    margin-left: 3.5rem;
+}
 }
 
 
