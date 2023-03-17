@@ -157,7 +157,15 @@ overlay.addEventListener("click", () => {
 
 // ---------------Cart slider---------------------
 
+// ACCORDION
+const accordion = document.getElementsByClassName('accordion');
 
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+    
+  })
+}
 
 // -----filter-slider-----//
 const filterbtn = document.querySelector(".filter-btn")
@@ -190,12 +198,3 @@ sub.addEventListener('click', () => {
 
 
 
-// ACCORDION
-const accordion = document.getElementsByClassName('accordion');
-
-for (i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
-    
-  })
-}
