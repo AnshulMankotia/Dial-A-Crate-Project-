@@ -264,6 +264,7 @@
   }
   .section3-1 table td {
     padding: 0rem;
+    flex-direction: column;
   }
   .productData .about span:last-child {
     padding-top: 0rem;
@@ -898,11 +899,10 @@ padding: 0 1rem;
   /* ==========//Contact-page========== */
 
   /* ===========Cart Page Query Starts===== */
-  .productData {
-    margin-top: 1rem;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: flex-start;
+
+
+  .productData{
+    flex-direction: column;
   }
   .btn-X {
     position: absolute;
@@ -924,6 +924,7 @@ padding: 0 1rem;
   }
   .section3-1 table td {
     padding: 0rem;
+    flex-direction: column;
   }
   .productData .about span:last-child {
     padding-top: 0rem;
@@ -944,12 +945,15 @@ padding: 0 1rem;
     margin-top: 2rem;
   }
 
+  .section3-1 {
+    margin: 3rem 0 0 0;
+}
+
   .currentPageDisplay {
-    margin-bottom: 0rem;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 2rem;
+    margin-bottom: 2rem;
+    
+    flex-direction: row;
+    
 }
 
 

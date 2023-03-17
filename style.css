@@ -1877,6 +1877,8 @@ small {
   }
   .currentPageDisplay {
     display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   .currentPageDisplay .page-loation {
 width: 50%;
@@ -1906,13 +1908,13 @@ width: 50%;
     letter-spacing: 0.035em;
   
   }
-  .currentPageDisplay span:first-child:after {
+  /* .currentPageDisplay span:first-child:after {
     content: url(/assets/SingleProductPageImages/rightangle.svg);
     display: inline-block;
     position: absolute;
     top: 1px;
     left: 8%;
-  }
+  } */
   .mainProduct {
     justify-content: space-between;
     gap: 2rem;
@@ -2104,6 +2106,10 @@ width: 50%;
   /* ---------//SECTION2-1 DESCRIPTION-------------- */
 
   /* ---------SECTION3-1 Recently Viewed Products-------------- */
+  .section3-1{
+    margin: 5rem 0 0 0;
+  }
+  
   .section3-1 .recentProducts{
     padding: 0rem 0 4rem 0;
     gap: 6rem;
